@@ -1,0 +1,26 @@
+{
+  "name": "firma-test",
+  "description": "a little test to animate my signature using css",
+  "main": "app.js",
+  "authors": [
+    "Miguel Palau"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "animation"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "vivus": "~0.2.3",
+    "flexboxgrid": "~6.3.0"
+  }
+}
