@@ -192,3 +192,8 @@ gulp.task('deploy',['production'], function() {
   return gulp.src('./dist/**/*')
   .pipe(ghPages());
 });
+
+// Ocupar solo si sabes esto borra el directorio de .git ideal para usar realmente de base para nuevos proyectos
+gulp.task('cleanGit', function(){
+  clean(['./.git']);
+});
