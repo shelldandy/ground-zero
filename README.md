@@ -31,3 +31,7 @@ gulp
 ```
 gulp production
 ```
+- Finalmente si estás ocupando GitHub como yo para guardar todo puedes usar este comando para cargar rápidamente a [Github Pages](https://pages.github.com/)
+```
+gulp deploy
+```
