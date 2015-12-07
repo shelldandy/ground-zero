@@ -139,7 +139,7 @@ gulp.task('default', ['browsersync', 'watch']);
 
 // Un archivo hermoso de limpieza mu
 gulp.task('clean', function() {
-  return clean(['./dist/**', '!./dist']);
+  return clean(['./dist', './.publish']);
 });
 
 
