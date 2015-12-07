@@ -1,0 +1,39 @@
+// BEM Bitches!!
+
+=e ($element)
+  &__#{$element}
+    @content
+
+=m ($modifier)
+  &--#{$modifier}
+    @content
+
+=is($bem)
+  &.is-#{$bem}
+    @content
+
+=img-replace ($img, $w, $h, $disp: block)
+  background-image: url('#{$path--img}/#{$img}')
+  background-repeat: no-repeat
+  width: $w
+  height: $h
+  display: $disp
+
+=mq ($breakpoint)
+  $value: map-get($breakpoints, $breakpoint)
+  @if $value != null
+    @media (min-width: $value)
+      @content
+  @else
+    @error "Desafortunadamente #{$breakpoint} no existe 😩 revisa el archivo _breakpoints.scss para saber cuales puedes usar."
+
+=social ($icon)
+  &.#{$icon}
+    background:
+      image: url('../img/#{$icon}.svg')
+      repeat: no-repeat
+
+
+// Si hay Google Font, entonces importala chingá
+@if variable-exists(font-url--google)
+  @import url($font-url--google)

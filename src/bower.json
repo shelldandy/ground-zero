@@ -1,0 +1,21 @@
+{
+  "name": "src",
+  "authors": [
+    "mike3run <mpalauzarza@gmail.com>"
+  ],
+  "description": "archivos bower para vivir feliz :)",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "modular-scale": "~2.1.1"
+  }
+}
