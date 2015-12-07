@@ -1,5 +1,5 @@
 {
-  "name": "mercadolibre",
+  "name": "ground-zero",
   "version": "1.0.0",
   "description": "Punto de arranque para el nuevo proyecto de Don Mango Lite. Primer parada: Plaza de la Tecnología ;)",
   "main": "gulpfile.js",
@@ -8,15 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/mike3run/mercadolibre.git"
+    "url": "https://github.com/mike3run/ground-zero"
   },
   "keywords": [
     "jade",
     "js",
     "coffeescript",
     "sass",
-    "api",
-    "mercadolibre"
+    "api"
   ],
   "author": "Miguel Palau @mpalau",
   "license": "UNLICENSED",
