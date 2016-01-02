@@ -7,10 +7,16 @@
 # http://miguel.click/ 😜
 ###
 
-
+# Testo Loco
 require './test'
 
 # Módulos para el desarrollo
 require './jade'
 require './sass'
 require './coffee'
+require './imagemin'
+require './clean'
+
+require './browsersync'
+
+require './default'
