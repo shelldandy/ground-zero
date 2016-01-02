@@ -2,7 +2,7 @@
 gulp = require 'gulp'
 browserSync = require 'browser-sync'
 
-gulp.task 'browsersync', ['clean', 'jade', 'sass', 'coffee', 'imagemin'], ->
+gulp.task 'browsersync', ['clean', 'jade', 'sass', 'coffee', 'imagemin', 'assets'], ->
   browserSync.init(
     server: (
       baseDir: './dist'
@@ -12,9 +12,3 @@ gulp.task 'browsersync', ['clean', 'jade', 'sass', 'coffee', 'imagemin'], ->
       port: 1706
       )
     )
-
-gulp.task 'watch', ->
-  gulp.watch 'src/jade/**', ['jade']
-  gulp.watch 'src/sass/**', ['sass']
-  gulp.watch 'src/coffee/**', ['coffee']
-  gulp.watch 'src/img/**', ['imagemin']
