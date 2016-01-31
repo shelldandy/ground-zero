@@ -4,7 +4,8 @@
   "description": "Punto de arranque para el nuevo proyecto de Don Mango Lite. Primer parada: Plaza de la Tecnología ;)",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "gulp test"
+    "test": "gulp test",
+    "start": "npm install && cd src && bower install"
   },
   "repository": {
     "type": "git",
