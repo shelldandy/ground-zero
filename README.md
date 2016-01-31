@@ -7,7 +7,6 @@ Con la ayuda moral de [@SusyFlores](https://github.com/SusyFlores) y un 🐶.
 
 ![MRW Life](mfw.gif)
 
----
 
 ## Pre-Instalación
 - Primero necesitamos tener terminal preferiblemente [iTerm](https://www.iterm2.com/) porque pues es bonito
@@ -21,7 +20,6 @@ brew install node
 npm install -g gulp browser-sync bower
 ```
 
----
 ## Instalación
 
 **Navega primero a la carpeta raíz del proyecto y entonces corre**
@@ -30,7 +28,6 @@ npm install -g gulp browser-sync bower
 npm start
 ```
 
----
 ## Uso
 
 - Listo ahora para operar simplemente puedes correr el siguiente comando
@@ -46,7 +43,6 @@ gulp production
 gulp deploy
 ```
 
----
 ## Features
 - Modular: Cada task de gulp está posicionada en su propio módulo, para facilidad de uso y comprensión. Igualmente está escrito en CoffeeScript por estética 😍
 
@@ -68,6 +64,5 @@ gulp deploy
 
 - CoffeeScript, TypeScript, Vanilla JS? Te tenemos cubierto! Concatena y minifiza código en cualquiera de esos sabores, el que está por default es CoffeeScript así que si lo quieres cambiar checa en `gulp/index.coffee`
 
----
 ## ¿Qué podría mejorar?
 De momento solo hay compatibilidad con Jade y Sass pues es lo que uso, pero es algo fácilmente corregible solo crea tus módulos correspondientes dentro de la carpeta `gulp` y añadelos al index y listo!!
