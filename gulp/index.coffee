@@ -13,11 +13,14 @@ require './test'
 # Módulos para el desarrollo
 # Si requieres usar typescript descomenta esto y agrega lo correspondiente en watch y browsersync
 
+# require './scripts'
 # require './typescript'
+# require './coffee'
+
 
 require './jade'
 require './sass'
-require './coffee'
+require './mixedJS'
 require './imagemin'
 require './assets'
 require './clean'
@@ -35,6 +38,7 @@ require './default'
 require './productionJade'
 require './productionSass'
 require './productionCoffee'
+require './productionMixedJS'
 
 require './production'
 

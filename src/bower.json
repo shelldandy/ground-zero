@@ -17,5 +17,8 @@
   ],
   "devDependencies": {
     "modular-scale": "~2.1.1"
+  },
+  "dependencies": {
+    "bootstrap-sass": "~3.3.6"
   }
 }
