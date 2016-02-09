@@ -2,7 +2,7 @@
 gulp = require 'gulp'
 browserSync = require 'browser-sync'
 
-gulp.task 'browsersync', ['clean', 'jade', 'sass', 'mixedJS', 'imagemin', 'assets'], ->
+gulp.task 'browsersync', ['jade', 'sass', 'mixedJS', 'imagemin', 'assets'], ->
   browserSync.init(
     server: (
       baseDir: './dist'

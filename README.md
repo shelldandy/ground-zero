@@ -17,7 +17,7 @@ brew install node
 ```
 - Una vez que tengas NPM vamos a instalar nuestras dependencias globales con el siguiente comando **Nota esto solo se hace la primera vez que lo instales por siempre**
 ```
-npm install -g gulp browser-sync bower
+npm run firstTime
 ```
 
 ## Instalación
@@ -25,14 +25,14 @@ npm install -g gulp browser-sync bower
 **Navega primero a la carpeta raíz del proyecto y entonces corre**
 
 ```
-npm start
+npm run getReady
 ```
 
 ## Uso
 
 - Listo ahora para operar simplemente puedes correr el siguiente comando
 ```
-gulp
+npm start
 ```
 - Cuando estes listo para cargar el proyecto vía FTP o lo que sea corre el siguiente comando
 ```

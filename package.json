@@ -5,7 +5,9 @@
   "main": "gulpfile.js",
   "scripts": {
     "test": "gulp test",
-    "start": "npm install && cd src && bower install"
+    "firstTime" : "npm install -g gulp browser-sync npm-cache bower",
+    "getReady": "npm-cache install npm && cd src && npm-cache install bower && cd ..",
+    "start" : "gulp clean && gulp"
   },
   "repository": {
     "type": "git",
