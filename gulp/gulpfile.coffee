@@ -21,7 +21,7 @@ gulp.task 'browsersync', ->
     online : true
     logConnections : true
 
-# Simple Watch Command for a more serious one try productionWatch.coffee
+# Simple Watch Command for a more serious one try production.coffee
 gulp.task 'watch', ['browsersync'], ->
   gulp.watch 'src/jade/**'  , ['jade']
   gulp.watch 'src/sass/**'  , ['sass']
