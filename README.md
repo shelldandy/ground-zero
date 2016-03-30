@@ -44,6 +44,7 @@ gulp deploy
 ## Features
 - Modular: Cada task de gulp está posicionada en su propio módulo, para facilidad de uso y comprensión. Igualmente está escrito en CoffeeScript por estética 😍
 
+- **SVG Power!**: Quieres tener todo el poder de íconos svg? Lo tienes! En la carpeta `svg` puedes meter íconos ya sea en inline o en external y usa adecuadamente. Se les pueden cambiar colores, anchura, anima, se feliz. Hay un ejemplo en `_sample.jade`
 
 - **Odin** un framework hecho con Stylus / Sass pensado con los principios BEM y SMACSS para super modularidad y belleza. Configura caaasi todo en `src/sass/0-utilities/_config.sass` Es básicamente barebones para que encima construyas lo que sea, te permite importar facilmente tus google fonts, ajustar breakpoints, paleta de colores, incluye mixins y funciones poderosas mwahaha.
 
