@@ -1,0 +1,146 @@
+nav.main-nav
+  .burger-toggle
+    .hamburger
+    
+  a.logo(href="/", title="Univer Para Crer") Univer Para Crer
+  
+  .search-toggle
+    form.search--tablet
+      label(for='search--tablet') Buscar por título
+      input#search--tablet(type='text', placeholder='Buscar por títulos', name='search')
+  
+    //- Mobile Hoverables
+  form.search
+    label(for='search') Buscar por título
+    input#search(type='text', placeholder='Buscar por título...', name='search')
+      
+  .options
+    a.option.option--1(href='#', title='Minha Conta') Minha Conta
+      img.option__image(src="img/settings.svg")        
+    a.option.option--2(href='#', title='Central de Ajuda') Central de Ajuda
+      img.option__image(src="img/help.svg")
+    a.option.option--3.option--no-icon(href='#') Sair
+    
+    //- Mobile SideBar
+  .sidebar
+    .sidebar__item.sidebar__categorias
+      svg.sidebar__item__icon
+        use(xlink:href='#categorias')
+      span.sidebar__item__name Categorias
+      svg.sidebar__item__icon--arrow.sidebar__categorias__daddy-arrow
+        use(xlink:href='#triangIzq')
+    
+    .sidebar__categorias__all
+      
+      .sidebar__item.sidebar__categorias--item.sidebar__categorias--1
+        svg.sidebar__categorias--arrow
+          use(xlink:href='#triangIzq')
+        span.sidebar__categorias--name Fé E Espiritualidade
+        
+      .sidebar__categorias__subcategoria
+        a.sidebar__categorias__subcategoria--link(href="#") Homens Excelentes
+        a.sidebar__categorias__subcategoria--link(href="#") Homen Prefeito
+        a.sidebar__categorias__subcategoria--link(href="#") Intellimen
+        a.sidebar__categorias__subcategoria--link(href="#") Homens Mais Fortes
+      
+      .sidebar__item.sidebar__categorias--item.sidebar__categorias--2
+        svg.sidebar__categorias--arrow
+          use(xlink:href='#triangIzq')
+        span.sidebar__categorias--name Sucesso Financeiro
+        
+      .sidebar__categorias__subcategoria
+        a.sidebar__categorias__subcategoria--link(href="#") Homens Excelentes
+        a.sidebar__categorias__subcategoria--link(href="#") Homen Prefeito
+        a.sidebar__categorias__subcategoria--link(href="#") Intellimen
+        a.sidebar__categorias__subcategoria--link(href="#") Homens Mais Fortes
+        
+      .sidebar__item.sidebar__categorias--item.sidebar__categorias--3
+        svg.sidebar__categorias--arrow
+          use(xlink:href='#triangIzq')
+        span.sidebar__categorias--name Relacionamiento
+        
+      .sidebar__categorias__subcategoria
+        a.sidebar__categorias__subcategoria--link(href="#") Homens Excelentes
+        a.sidebar__categorias__subcategoria--link(href="#") Homen Prefeito
+        a.sidebar__categorias__subcategoria--link(href="#") Intellimen
+        a.sidebar__categorias__subcategoria--link(href="#") Homens Mais Fortes
+        
+      .sidebar__item.sidebar__categorias--item.sidebar__categorias--4
+        svg.sidebar__categorias--arrow
+          use(xlink:href='#triangIzq')
+        span.sidebar__categorias--name Homem
+        
+      .sidebar__categorias__subcategoria
+        a.sidebar__categorias__subcategoria--link(href="#") Homens Excelentes
+        a.sidebar__categorias__subcategoria--link(href="#") Homen Prefeito
+        a.sidebar__categorias__subcategoria--link(href="#") Intellimen
+        a.sidebar__categorias__subcategoria--link(href="#") Homens Mais Fortes
+        
+      .sidebar__item.sidebar__categorias--item.sidebar__categorias--5
+        svg.sidebar__categorias--arrow
+          use(xlink:href='#triangIzq')
+        span.sidebar__categorias--name Mulher
+        
+      .sidebar__categorias__subcategoria
+        a.sidebar__categorias__subcategoria--link(href="#") Homens Excelentes
+        a.sidebar__categorias__subcategoria--link(href="#") Homen Prefeito
+        a.sidebar__categorias__subcategoria--link(href="#") Intellimen
+        a.sidebar__categorias__subcategoria--link(href="#") Homens Mais Fortes
+        
+    a.sidebar__item(href="#")
+      svg.sidebar__item__icon
+        use(xlink:href='#new')
+      span.sidebar__item__name Novidades   
+    a.sidebar__item(href="#")
+      svg.sidebar__item__icon
+        use(xlink:href='#pc')
+      span.sidebar__item__name Como Assistir
+    
+    .sidebar__item.sidebar__usuario
+      svg.sidebar__item__icon
+        use(xlink:href='#usuario')
+      span.sidebar__item__name Usúario
+      svg.sidebar__item__icon--arrow.sidebar__item__icon--arrow--usuario
+        use(xlink:href='#triangIzq')
+    
+    .sidebar__usuario__all
+    
+      .sidebar__usuario__item.sidebar__usuario__item--1
+        svg.sidebar__usuario__icon
+          use(xlink:href='#ajuste')
+        a.sidebar__usuario__name(href="#") Minha Conta
+        
+      .sidebar__usuario__item.sidebar__usuario__item--2
+        svg.sidebar__usuario__icon
+          use(xlink:href='#ajuda')
+        a.sidebar__usuario__name(href="#") Central de Ajuda
+        
+      .sidebar__usuario__item.sidebar__usuario__item--3
+        a.sidebar__usuario__name.sidebar__usuario__name--no-icon(href="#") Sair
+      
+
+  //- Tablet Mode
+  .user
+    img.user__pic(src='img/user.svg')
+    span.user__name Usuário
+    img.user__more(src='img/triangle.svg')
+    
+  //- Desktop Mode
+  .desktop-options
+    span.desktop-options__option.desktop-options--categorias(href='#') Categorias
+      img.user__more(src='img/triangleWhite.svg')        
+    a.desktop-options__option(href='#') Novidades
+    a.desktop-options__option(href='#') Como Assistir
+    
+  .categories
+    ul.categories__main
+      li: a.categories__main--1(href='#') Fé E Espiritualidade
+      li: a.categories__main--2(href='#') Sucesso Financeiro
+      li: a.categories__main--3(href='#') Relacionamiento
+      li: a.categories__main--4(href='#') Homem
+      li: a.categories__main--5(href='#') Mulher
+    ul.categories__sub
+      li: a(href='#') Homens Excelentes
+      li: a(href='#') Homem Perfeito
+      li: a(href='#') Intellimen
+      li: a(href='#') Homens Mais Fortes

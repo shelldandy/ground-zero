@@ -1,9 +1,11 @@
 section.sample
   .container
-    .row.vertical
+    .flexyrow.vertical
+      svg.odin
+        use(xlink:href='#odin')
       h1 Bienvenidos
-      h4 Don Mango Lite
-    .row
+      h4 Ground Zero
+    .flexyrow
       .half.vertical
         p Modifica esto a tu antojo con los archivos Jade y en cuanto estés listo corre el siguiente comando para compilar todo:
         
@@ -17,11 +19,14 @@ section.sample
         
         code gulp deploy 
         
-        p Finalmente recibe un nopal sin ningún motivo aparente 🐶.
+        p Finalmente recibe un nopal sin ningún motivo aparente
 
       
       .half.vertical
         img(src='img/nopal.png', alt='Un nopal bonito')
 
-    .row
+    .flexyrow
       a.btn(href='https://github.com/mike3run/ground-zero/archive/master.zip') Descarga aquí
+      
+    svg.odin-footer
+      use(xlink:href='svg/external.svg#chochini')

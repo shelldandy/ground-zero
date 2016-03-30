@@ -1,0 +1,8 @@
+em(target, base = base__font-size)
+  unit( (target / base) , 'em')
+
+//Cool font-size setter, great if you use a lot of Sketch
+fonty(sizy, line, spacing = 0, measure = 'px')
+  font-size unit(sizy, measure)
+  letter-spacing unit(spacing, measure)
+  line-height (line/sizy)

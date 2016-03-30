@@ -1,0 +1,25 @@
+doctype html
+html(lang='pt')
+	head
+		meta(charset='utf-8')
+		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0")
+		title Univer
+		link(rel='stylesheet', href='css/vendor.css')
+		link(rel='stylesheet', href='css/odin.css')
+		block head
+			//- If extra head content is necessary per page, it can be added in index.jade
+
+	body
+		div.is-hidden
+			include ./includes/inline.svg
+
+		block content
+			//- This gets replaced by content in index.jade
+		
+		block footer
+			//- If extra footer content is necessary per page, it can be added in index.jade
+		
+		script(src="js/vendor.js")
+		script(src='js/app.js')
+			
+		block scripts

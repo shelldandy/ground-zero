@@ -1,24 +1,12 @@
-### OSX ###
 .DS_Store
 .AppleDouble
 .LSOverride
-
-### Dist Folder ###
 dist
-
-### Node.js ###
 logs
 *.log
 npm-debug.log*
 node_modules
-
-### Sass ###
 .sass-cache/
 *.css.map
-
-
-### Bower ###
-bower_components
-
-### Gulp-gh-pages ###
+bower
 .publish

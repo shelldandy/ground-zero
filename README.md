@@ -1,11 +1,9 @@
 # Ground Zero
 Punto de partida para proyectos de Front-End
 
-Pensado para [GeekyBytes Lite](http://geekybytes.mx)
-
 Con la ayuda moral de [@SusyFlores](https://github.com/SusyFlores) y un 🐶.
 
-![MRW Life](mfw.gif)
+![It's 2.0!](meSoHappy.gif)
 
 
 ## Pre-Instalación
@@ -47,22 +45,12 @@ gulp deploy
 - Modular: Cada task de gulp está posicionada en su propio módulo, para facilidad de uso y comprensión. Igualmente está escrito en CoffeeScript por estética 😍
 
 
-- **Odin** un framework hecho con Sass pensado con los principios BEM y SMACSS para super modularidad y belleza. Configura caaasi todo en `src/sass/0-utilities/_config.sass` Es básicamente barebones para que encima construyas lo que sea, te permite importar facilmente tus google fonts, ajustar breakpoints, paleta de colores, incluye mixins poderosos como por ejemplo:
+- **Odin** un framework hecho con Stylus / Sass pensado con los principios BEM y SMACSS para super modularidad y belleza. Configura caaasi todo en `src/sass/0-utilities/_config.sass` Es básicamente barebones para que encima construyas lo que sea, te permite importar facilmente tus google fonts, ajustar breakpoints, paleta de colores, incluye mixins y funciones poderosas mwahaha.
 
-  ```
-  .sample
-    padding: ms(1) 0 // Acá estamos usando modular-scale checa más abajo que es ;)
+- **Axis** - a utility belt for stylus. Resets como si nada, gradientes, layouts, etc muchas cosas muy muy cool checa más acá: http://axis.netlify.com/
 
-    +m(button) // genera esto: .sample__button
-      background: palette(gris, xx-light) // checa color-palletes para configurar estos colores :)
+- **Jeet** a grid system for humans. porque el mundo no necesita otro sitio con bootstrap. Haz magia estilo Flexbox pero con soporte hasta IE9 + wuuu http://jeet.gs/
 
-      +e(alert) // genera esto: .sample__button--alert
-        background: $rojo // color general en _config.sass
-  ```
-
-- [Modular-Scale](https://github.com/modularscale/modularscale-sass) - Plugin de Sass basado en [Type-Scale](http://type-scale.com/) nos permite ajustar tamaños de letra, margin, padding, etc etc de manera muy fácil en formatos EM y usando cuestiones de belleza matemática como Cuartos Perfectos (default), o Golden Ratio (como la cara de Britney Bitch) para que exista armonía y belleza en tus proyectos sin tener que andar pensando. 🍺
-
-- CoffeeScript, TypeScript, Vanilla JS? Te tenemos cubierto! Concatena y minifiza código en cualquiera de esos sabores, el que está por default es CoffeeScript así que si lo quieres cambiar checa en `gulp/index.coffee`
 
 ## ¿Qué podría mejorar?
 De momento solo hay compatibilidad con Jade y Sass pues es lo que uso, pero es algo fácilmente corregible solo crea tus módulos correspondientes dentro de la carpeta `gulp` y añadelos al index y listo!!
