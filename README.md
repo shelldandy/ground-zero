@@ -1,10 +1,9 @@
 # Ground Zero
 Punto de partida para proyectos de Front-End
 
-Con la ayuda moral de [@SusyFlores](https://github.com/SusyFlores) y un 🐶.
+Con la ayuda moral de [@SusyFlores](https://github.com/SusyFlores) y un 🐶 (Chochini)
 
 ![It's 2.0!](meSoHappy.gif)
-
 
 ## Pre-Instalación
 - Primero necesitamos tener terminal preferiblemente [iTerm](https://www.iterm2.com/) porque pues es bonito
@@ -44,9 +43,11 @@ npm run githubDeploy
 ## Features
 - Modular: Cada task de gulp está posicionada en su propio módulo, para facilidad de uso y comprensión. Igualmente está escrito en CoffeeScript por estética 😍
 
-- **SVG Power!**: Quieres tener todo el poder de íconos svg? Lo tienes! En la carpeta `svg` puedes meter íconos ya sea en inline o en external y usa adecuadamente. Se les pueden cambiar colores, anchura, anima, se feliz. Hay un ejemplo en `_sample.jade`
+- **SVG Power!**: Quieres tener todo el poder de íconos svg? Lo tienes! En la carpeta `svg` puedes meter íconos ya sea en inline o en external y usa adecuadamente. Se les pueden cambiar colores, anchura, anima, se feliz. Hay un ejemplo en `_sample.jade` Checa http://fvsch.com/code/svg-icons/how-to/ para más información
 
 - **Odin** un framework hecho con Stylus / Sass pensado con los principios BEM y SMACSS para super modularidad y belleza. Configura caaasi todo en `src/sass/0-utilities/_config.sass` Es básicamente barebones para que encima construyas lo que sea, te permite importar facilmente tus google fonts, ajustar breakpoints, paleta de colores, incluye mixins y funciones poderosas mwahaha.
+
+- **Usa custom fonts en Base64** Fuck yeah! Tienes unas fonts que te pasaron en formato escritorio porque Diseñador? No importa metelas en tu carpeta `src/fonts` o si un paquete de Bower tiene sus fonts no las copies solo agrega su camino en config.coffee fonts!
 
 - **Axis** - a utility belt for stylus. Resets como si nada, gradientes, layouts, etc muchas cosas muy muy cool checa más acá: http://axis.netlify.com/
 
@@ -55,3 +56,6 @@ npm run githubDeploy
 
 ## ¿Qué podría mejorar?
 De momento solo hay compatibilidad con Jade y Sass pues es lo que uso, pero es algo fácilmente corregible solo crea tus módulos correspondientes dentro de la carpeta `gulp` y añadelos al index y listo!!
+
+## Coming Soon...
+- Modular Scale Stylus! (Vi algunas soluciones pero no me gustaron así que en un futuro fin de semana haré ese plugin para Stylus para tener ritmo nuevamente!)

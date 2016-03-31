@@ -31,12 +31,14 @@ gulp.task 'watch', ['browsersync'], ->
   gulp.watch 'src/img/**'   , ['imagemin']
   gulp.watch 'src/assets/**', ['assets']
   gulp.watch 'src/svg/**', ['svg', 'jade']
+  gulp.watch 'src/fonts/**/*', ['fonts']
 
 # Default Task Because YOLO
 gulp.task 'default', ->
   runSequence 'clean',
     'scripts',
-    'coffee'
+    'coffee',
+    'fonts'
     'sass',
     'stylus',
     'imagemin',
@@ -49,7 +51,8 @@ gulp.task 'default', ->
 gulp.task 'gitlab', ->
   runSequence 'clean',
     'scripts',
-    'coffee'
+    'coffee',
+    'fonts',
     'sass',
     'stylus',
     'imagemin',

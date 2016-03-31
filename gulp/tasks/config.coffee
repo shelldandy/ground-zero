@@ -15,3 +15,8 @@ module.exports =
   uncssIgnore : [
     ''
   ]
+  # Paths to our font files
+  fonts : [
+    './src/fonts/*.otf'
+    './src/fonts/*.ttf'
+  ]

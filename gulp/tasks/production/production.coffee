@@ -13,13 +13,16 @@ gulp.task 'production:watch', ['browsersync'], ->
   gulp.watch 'src/img/**'   , ['imagemin']
   gulp.watch 'src/assets/**', ['assets']
   gulp.watch 'src/svg/**', ['svg', 'production:jade']
+  gulp.watch 'src/fonts/**/*', ['fonts']
+
 
 
 # Default Production task Because YOLOP
 gulp.task 'production', ->
   runSequence 'clean',
     'production:scripts',
-    'production:coffee'
+    'production:coffee',
+    'fonts',
     'production:sass',
     'production:stylus',
     'imagemin',
@@ -33,7 +36,8 @@ gulp.task 'production', ->
 gulp.task 'production:noWatch', ->
   runSequence 'clean',
     'production:scripts',
-    'production:coffee'
+    'production:coffee',
+    'fonts',
     'production:sass',
     'production:stylus',
     'imagemin',
