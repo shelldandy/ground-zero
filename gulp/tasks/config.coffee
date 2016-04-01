@@ -5,7 +5,7 @@ module.exports =
     ]
   # Here you add the paths to the full-length js files from your Bower imports
   scriptFiles : [
-      ''
+      './src/bower/jquery/dist/jquery.min.js'
     ]
   # Html Files to go through UNCSS to remove unused declarations etc but...
   uncssHtml : [
