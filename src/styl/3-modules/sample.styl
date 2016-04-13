@@ -9,16 +9,16 @@
     align-self: flex-start
     flex-basis: 100%
     max-width: 100%
-    +mq('medium')
+    +breakpoint('tablet')
       flex-basis: 50%
       max-width: 50%
       padding: em(8px)
-    +mq('large')
+    +breakpoint('desktop')
       align-self: center
 
   h1
     font-size: 3.21399em
-    +mq('medium')
+    +breakpoint('tablet')
       font-size: 4.21399em
 
   h4
@@ -29,7 +29,7 @@
     margin-top: em(15px)
     border: 8px solid white
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50)
-    +mq('medium')
+    +breakpoint('tablet')
       margin: 0
       max-width: 440px
 
