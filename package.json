@@ -8,7 +8,7 @@
     "firstTime": "npm install -g gulp browser-sync npm-cache bower",
     "getReady": "npm-cache install bower npm",
     "start": "gulp",
-    "githubDeploy" : "gulp production:noWatch && gulp deploy && gulp clean"
+    "githubDeploy": "gulp production:noWatch && gulp deploy && gulp clean"
   },
   "repository": {
     "type": "git",
@@ -46,7 +46,6 @@
     "gulp-cssnano": "*",
     "gulp-gh-pages": "*",
     "gulp-imagemin": "*",
-    "gulp-jade": "*",
     "gulp-load-plugins": "*",
     "gulp-newer": "*",
     "gulp-notify": "*",
@@ -59,6 +58,7 @@
     "gulp-uncss": "*",
     "gulp-util": "*",
     "imagemin-pngquant": "*",
+    "jade": "*",
     "jeet": "*",
     "require-dir": "*",
     "run-sequence": "*",
