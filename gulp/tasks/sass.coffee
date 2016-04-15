@@ -14,6 +14,8 @@ gulp.task 'sass', ->
   .pipe $.sass
     includePaths : config.sassIncludes
     outputStyle : 'nested'
+  .pipe $.autoprefixer
+    browsers : ['last 2 versions']
   .pipe $.csscomb()
   .pipe $.sourcemaps.write './'
   .pipe gulp.dest './dist/css/'
