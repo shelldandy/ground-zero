@@ -1,0 +1,30 @@
+// Situación para que no se vea el texto en la pantalla pero si en el html ;)
+%sin-texto
+  text-indent: 101%
+  overflow: hidden
+  white-space: nowrap
+
+%btn-default
+  color: $blanco
+  border-radius: 40px
+  font-family: $font-family--primary
+  font-weight: $font__weight--bold
+  letter-spacing: em(2.5px)
+  border-style: none
+  background: $color-primario
+  font-size: em(10px)
+  line-height: 1.5
+  text-transform: uppercase
+  padding: 1em 2em
+  outline: none
+  transition: 0.2s ease-in-out
+
+  &:hover
+    background: palette(primario, dark)
+  &:active
+    box-shadow: none
+
+// Headings
+%header-default
+  font-family: $font-family--primary
+  font-weight: $font__weight--bold

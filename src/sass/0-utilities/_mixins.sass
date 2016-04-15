@@ -1,0 +1,51 @@
+@import "resets"
+
+// BEM Bitches!!
+
+=e ($element)
+  &__#{$element}
+    @content
+
+=m ($modifier)
+  &--#{$modifier}
+    @content
+
+=is($bem)
+  &.is-#{$bem}
+    @content
+
+=img-replace ($img, $w, $h, $disp: block)
+  background-image: url('#{$path--img}/#{$img}')
+  background-repeat: no-repeat
+  width: $w
+  height: $h
+  display: $disp
+
+=breakpoint ($breakpoint)
+  $value: map-get($breakpoints, $breakpoint)
+  @if $value != null
+    @media (min-width: $value)
+      @content
+  @else
+    @error "Desafortunadamente #{$breakpoint} no existe 😩 revisa el archivo _breakpoints.scss para saber cuales puedes usar."
+
+// Smart Underlines powered by: https://eager.io/blog/smarter-link-underlines/
+=smartUnderline($backgroundColor, $color)
+  color: $color
+  text-decoration: none
+  text-shadow: .03em 0 $backgroundColor, -.03em 0 $backgroundColor, 0 .03em $backgroundColor, 0 -.03em $backgroundColor, .06em 0 $backgroundColor, -.06em 0 $backgroundColor, .09em 0 $backgroundColor, -.09em 0 $backgroundColor, .12em 0 $backgroundColor, -.12em 0 $backgroundColor, .15em 0 $backgroundColor, -.15em 0 $backgroundColor
+  background-image: linear-gradient($backgroundColor, $backgroundColor), linear-gradient($backgroundColor, $backgroundColor), linear-gradient($color, $color)
+  background-size: .05em 1px, .05em 1px, 1px 1px
+  background-repeat: no-repeat, no-repeat, repeat-x
+  background-position: 0% 90%, 100% 90%, 0% 90%
+  &::selection
+    text-shadow: .03em 0 $main-color, -.03em 0 $main-color, 0 .03em $main-color, 0 -.03em $main-color, .06em 0 $main-color, -.06em 0 $main-color, .09em 0 $main-color, -.09em 0 $main-color, .12em 0 $main-color, -.12em 0 $main-color, .15em 0 $main-color, -.15em 0 $main-color
+    background: $main-color
+  &:before, &:after, *, *:before, *:after
+    text-shadow: none
+  &:visited
+    color: $color
+
+// Si hay Google Font, entonces importala chingá
+@if variable-exists(font-url--google)
+  @import url($font-url--google)
