@@ -49,13 +49,6 @@ npm run githubDeploy
 
 - **Usa custom fonts en Base64** Fuck yeah! Tienes unas fonts que te pasaron en formato escritorio porque Diseñador? No importa metelas en tu carpeta `src/fonts` o si un paquete de Bower tiene sus fonts no las copies solo agrega su camino en config.coffee fonts!
 
-- **Axis** - a utility belt for stylus. Resets como si nada, gradientes, layouts, etc muchas cosas muy muy cool checa más acá: http://axis.netlify.com/
+- [**Jeet**](http://jeet.gs/) a grid system for humans. porque el mundo no necesita otro sitio con bootstrap. Haz magia estilo Flexbox pero con soporte hasta IE9 + wuuu
 
-- **Jeet** a grid system for humans. porque el mundo no necesita otro sitio con bootstrap. Haz magia estilo Flexbox pero con soporte hasta IE9 + wuuu http://jeet.gs/
-
-
-## ¿Qué podría mejorar?
-De momento solo hay compatibilidad con Jade y Sass pues es lo que uso, pero es algo fácilmente corregible solo crea tus módulos correspondientes dentro de la carpeta `gulp` y añadelos al index y listo!!
-
-## Coming Soon...
-- Modular Scale Stylus! (Vi algunas soluciones pero no me gustaron así que en un futuro fin de semana haré ese plugin para Stylus para tener ritmo nuevamente!)
+- [**Modular-Scale**](https://github.com/modularscale/modularscale-sass) - Plugin de Sass basado en [Type-Scale](http://type-scale.com/) nos permite ajustar tamaños de letra, margin, padding, etc etc de manera muy fácil en formatos EM y usando cuestiones de belleza matemática como Cuartos Perfectos (default), o Golden Ratio (como la cara de Britney Bitch) para que exista armonía y belleza en tus proyectos sin tener que andar pensando. 🍺

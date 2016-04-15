@@ -1,4 +1,7 @@
 .row
+  +cf()
+
+.row--flex
   display: flex
   flex-direction: column
   flex-wrap: wrap
@@ -7,7 +10,7 @@
   text-align: center
   max-width: 100%
 
-  +mq(medium)
+  +breakpoint(tablet)
     flex-direction: row
     justify-content: space-around
 

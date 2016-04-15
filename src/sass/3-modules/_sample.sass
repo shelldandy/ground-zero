@@ -1,28 +1,97 @@
 .sample
+  padding: 20px 0
   code
-    background: palette(gris,x-light)
+    background: #d6d7d9
     padding: em(5px) em(30px)
     margin: em(10px) 0
 
   .half
     align-self: flex-start
-    +mq(medium)
+    flex-basis: 100%
+    max-width: 100%
+    +breakpoint(tablet)
       flex-basis: 50%
       max-width: 50%
       padding: em(8px)
-    +mq(large)
+    +breakpoint(desktop)
       align-self: center
+
+  h1
+    font-size: 3.21399em
+    +breakpoint('tablet')
+      font-size: 4.21399em
 
   h4
     margin-bottom: em(15px)
+    font-size: 1.77778em
 
   img
     margin-top: em(15px)
-    border: 8px solid $blanco
+    border: 8px solid white
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50)
-    +mq(medium)
+    +breakpoint(tablet)
       margin: 0
       max-width: 440px
 
+  .odin
+    height: em(90px)
+    width: em(150px)
+    fill: #4a90e2
+    stroke: white
+    transition: $trns-duration
+    position: relative
+    &:hover
+      fill: $main-color
+      stroke-width: 3
+      transform: rotate(-25deg) translate3d(0, 30%, 0)
+
   .btn
     margin-top: em(25px)
+    color: white
+    border-radius: 40px
+    font-family: $font-family--primary
+    font-weight: bold
+    letter-spacing: em(2.5px)
+    border-style: none
+    background: $main-color
+    font-size: em(10px)
+    line-height: 1.5
+    text-transform: uppercase
+    padding: 1em 2em
+    outline: none
+    transition: 0.2s ease-in-out
+    position: relative
+    text-decoration: none
+
+    &:hover
+      background: darken($main-color, 8%)
+      color: white
+    &:active
+      box-shadow: none
+    &:visited
+      color: white
+
+  .custom-font
+    font-family: font-family--secondary
+    font-weight: initial
+    font-size: em(24px)
+    margin-top: em(30px)
+    color: #4a90e2
+
+  .odin-footer
+    width: em(50px)
+    height: em(50px)
+    fill: lighten(black, 30%)
+    margin-top: em(25px)
+    transition: 1s
+
+    &:hover
+      animation: rebote 1.5s infinite
+  @at-root
+    @keyframes rebote
+      50%
+        transform: scale(3) translateY(25%) rotate(15deg)
+        fill: #2ba5e0
+      80%
+        transform: rotate(390deg)
+        fill: $main-color
