@@ -30,7 +30,6 @@
   },
   "homepage": "https://github.com/mike3run/ground-zero#readme",
   "devDependencies": {
-    "axis": "*",
     "browser-sync": "*",
     "coffee-script": "*",
     "del": "*",
@@ -59,9 +58,7 @@
     "gulp-util": "*",
     "imagemin-pngquant": "*",
     "jade": "*",
-    "jeet": "*",
     "require-dir": "*",
-    "run-sequence": "*",
-    "stylus": "*"
+    "run-sequence": "*"
   }
 }
