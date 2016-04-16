@@ -8,7 +8,6 @@ gulp.task 'production:watch', ['browsersync'], ->
   gulp.watch 'src/jade/**'  , ['production:jade']
   gulp.watch 'src/sass/**'  , ['production:sass']
   gulp.watch 'src/coffee/**', ['production:coffee']
-  gulp.watch 'src/styl/**/*' , ['production:stylus']
   gulp.watch 'src/bower/**', ['production:scripts', 'production:sass']
   gulp.watch 'src/img/**'   , ['imagemin']
   gulp.watch 'src/assets/**', ['assets']
@@ -24,7 +23,6 @@ gulp.task 'production', ->
     'production:coffee',
     'fonts',
     'production:sass',
-    'production:stylus',
     'imagemin',
     'assets',
     'svg',
@@ -39,7 +37,6 @@ gulp.task 'production:noWatch', ->
     'production:coffee',
     'fonts',
     'production:sass',
-    'production:stylus',
     'imagemin',
     'assets',
     'svg',

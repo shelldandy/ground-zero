@@ -1,3 +1,5 @@
+
+// Mixins de resets populares (Reset y Normalize 😍)
 @import "resets"
 
 // BEM Bitches!!
@@ -13,13 +15,6 @@
 =is($bem)
   &.is-#{$bem}
     @content
-
-=img-replace ($img, $w, $h, $disp: block)
-  background-image: url('#{$path--img}/#{$img}')
-  background-repeat: no-repeat
-  width: $w
-  height: $h
-  display: $disp
 
 =breakpoint ($breakpoint)
   $value: map-get($breakpoints, $breakpoint)
@@ -48,6 +43,13 @@
     text-shadow: none
   &:visited
     color: $color
+
+// Fonty un conversor de datos del Sketch a ems like a bawse by @mpalau
+=fonty($font-size, $line-height, $letter-spacing : null, $base: $base__font-size)
+  font-size: em($font-size, $base)
+  line-height: ($line-height / $font-size)
+  @if $letter-spacing != null
+    letter-spacing: em($letter-spacing, $base)
 
 // Si hay Google Font, entonces importala chingá
 @if variable-exists(font-url--google)

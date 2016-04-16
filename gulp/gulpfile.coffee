@@ -26,7 +26,6 @@ gulp.task 'watch', ['browsersync'], ->
   gulp.watch 'src/jade/**'  , ['jade']
   gulp.watch 'src/sass/**'  , ['sass']
   gulp.watch 'src/coffee/**', ['coffee']
-  gulp.watch 'src/styl/**/*' , ['stylus']
   gulp.watch 'src/bower/**', ['scripts', 'sass']
   gulp.watch 'src/img/**'   , ['imagemin']
   gulp.watch 'src/assets/**', ['assets']
@@ -40,7 +39,6 @@ gulp.task 'default', ->
     'coffee',
     'fonts'
     'sass',
-    'stylus',
     'imagemin',
     'assets',
     'svg',
@@ -54,7 +52,6 @@ gulp.task 'gitlab', ->
     'coffee',
     'fonts',
     'sass',
-    'stylus',
     'imagemin',
     'assets',
     'jade'
