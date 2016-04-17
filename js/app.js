@@ -1,1 +1,1 @@
-(function(){(new WOW).init()}).call(this);
+(function(){console.log("La vida es más que bella, es hermosa")}).call(this);
