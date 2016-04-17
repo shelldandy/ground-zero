@@ -44,6 +44,7 @@
     "gulp-cssfont64": "*",
     "gulp-cssnano": "*",
     "gulp-gh-pages": "*",
+    "gulp-group-css-media-queries": "*",
     "gulp-imagemin": "*",
     "gulp-load-plugins": "*",
     "gulp-newer": "*",

@@ -13,6 +13,7 @@ gulp.task 'production:sass', ->
     includePaths : config.sassIncludes
   .pipe $.autoprefixer
     browsers : ['last 2 versions']
+  .pipe $.groupCssMediaQueries()
   .pipe $.csscomb()
   .pipe gulp.dest './dist/css/'
   .pipe browserSync.reload(stream : true)

@@ -16,6 +16,7 @@ gulp.task 'sass', ->
     outputStyle : 'nested'
   .pipe $.autoprefixer
     browsers : ['last 2 versions']
+  .pipe $.groupCssMediaQueries()
   .pipe $.csscomb()
   .pipe $.sourcemaps.write './'
   .pipe gulp.dest './dist/css/'
