@@ -25,19 +25,7 @@ gulp.task 'production', ->
     'production:sass',
     'imagemin',
     'assets',
-    'svg',
+    'svg:inline',
+    'svg:external',
     'production:jade',
     'production:watch'
-
-
-# Default Production task Because YOLOP
-gulp.task 'production:noWatch', ->
-  runSequence 'clean',
-    'production:scripts',
-    'production:coffee',
-    'fonts',
-    'production:sass',
-    'imagemin',
-    'assets',
-    'svg',
-    'production:jade'

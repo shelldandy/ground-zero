@@ -4,10 +4,11 @@ browserSync   = require 'browser-sync'
 onError       = require './error'
 plugins       = require 'gulp-load-plugins'
 $             = plugins()
+config        = require './config'
 
 
 gulp.task 'assets', ->
-  gulp.src './src/assets/**/*'
+  gulp.src config.assets
   .pipe $.plumber(errorHandler: onError)
-  .pipe gulp.dest './dist/assets/'
+  .pipe gulp.dest config.exportPath + '/assets/'
   .pipe browserSync.reload(stream : true)

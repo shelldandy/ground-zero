@@ -57,7 +57,6 @@
     "gulp-uglify": "*",
     "gulp-uncss": "*",
     "gulp-util": "*",
-    "imagemin-pngquant": "*",
     "jade": "*",
     "require-dir": "*",
     "run-sequence": "*"

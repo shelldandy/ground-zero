@@ -12,4 +12,4 @@ gulp.task 'fonts', ->
   .pipe $.plumber(errorHandler: onError)
   .pipe $.cache($.cssfont64())
   .pipe $.concat('fonts.css')
-  .pipe gulp.dest('./dist/css')
+  .pipe gulp.dest config.exportPath + '/css/'

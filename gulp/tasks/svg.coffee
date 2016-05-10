@@ -5,6 +5,7 @@ onError       = require './error'
 plugins       = require 'gulp-load-plugins'
 $             = plugins()
 runSequence   = require('run-sequence').use(gulp)
+config        = require './config'
 
 
 #This task outputs to the Jade Includes to place inline
@@ -40,7 +41,7 @@ gulp.task 'svg:external', ->
     parserOptions :
       xmlMode : true
   )
-  .pipe gulp.dest './dist/svg/'
+  .pipe gulp.dest config.exportPath + '/svg/'
 
 
 # Run Both Tasks on a Single Call :)

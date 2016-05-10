@@ -41,7 +41,8 @@ gulp.task 'default', ->
     'sass',
     'imagemin',
     'assets',
-    'svg',
+    'svg:inline',
+    'svg:external',
     'jade',
     'watch'
 
@@ -54,4 +55,6 @@ gulp.task 'gitlab', ->
     'sass',
     'imagemin',
     'assets',
+    'svg:inline',
+    'svg:external',
     'jade'

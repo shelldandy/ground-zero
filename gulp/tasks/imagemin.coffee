@@ -1,10 +1,10 @@
 'use strict'
-gulp        = require 'gulp'
-pngquant    = require 'imagemin-pngquant'
-browserSync = require 'browser-sync'
+gulp          = require 'gulp'
+browserSync   = require 'browser-sync'
 onError       = require './error'
 plugins       = require 'gulp-load-plugins'
 $             = plugins()
+config        = require './config'
 
 gulp.task 'imagemin', ->
   gulp.src './src/img/**/*'
@@ -17,7 +17,6 @@ gulp.task 'imagemin', ->
       removeViewBox : false
       removeDimensions : true
       }]
-    use : [pngquant()]
   )
-  .pipe gulp.dest './dist/img'
+  .pipe gulp.dest config.exportPath + '/img/'
   .pipe browserSync.reload(stream : true)

@@ -1,9 +1,14 @@
 'use strict'
-gulp = require 'gulp'
-clean = require 'del'
+gulp        = require 'gulp'
+clean       = require 'del'
+config      = require './config'
 
 gulp.task 'clean', ->
-  clean ['./dist/**', '!./dist', './.publish']
+  clean [
+    config.exportPath + '/**'
+    '!' + config.exportPath
+    './.publish'
+  ]
 
 gulp.task 'clean:git', ->
   clean ['./.git']
