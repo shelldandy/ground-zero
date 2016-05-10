@@ -8,7 +8,7 @@
     "firstTime": "npm install -g gulp browser-sync npm-cache bower",
     "getReady": "npm-cache install bower npm",
     "start": "gulp",
-    "githubDeploy": "gulp production:noWatch && gulp deploy && gulp clean"
+    "githubDeploy": "gulp gitlab && gulp deploy && gulp clean"
   },
   "repository": {
     "type": "git",
