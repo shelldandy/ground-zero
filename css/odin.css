@@ -1,4 +1,5 @@
 @charset 'UTF-8';
+
 /*!
  * Odin - Un framework Sass hecho por: @mpalau
  * Basado en los principios BEM y SMACSS.
@@ -7,6 +8,7 @@
  *
  * NOTA: Usa Autoprefixer 😜
  */
+
 /*  Syntax Quick Reference
   --------------------------
   column($ratios: 1, $offset: 0, $cycle: 0, $uncycle: 0, $gutter: $jeet-gutter)
@@ -20,29 +22,35 @@
   align($direction: both)
   cf()
 */
+
 /**
  * Grid settings.
  * All values are defaults and can therefore be easily overidden.
  */
+
 /**
  * List functions courtesy of the wonderful folks at Team Sass.
  * Check out their awesome grid: Singularity.
  */
+
 /**
  * Get  percentage from a given ratio.
  * @param {number} [$ratio=1] - The column ratio of the element.
  * @returns {number} - The percentage value.
  */
+
 /**
  * Work out the column widths based on the ratio and gutter sizes.
  * @param {number} [$ratios=1] - The column ratio of the element.
  * @param {number} [$gutter=$jeet-gutter] - The gutter for the column.
  * @returns {list} $width $gutter - A list containing the with and gutter for the element.
  */
+
 /**
  * Get the set layout direction for the project.
  * @returns {string} $direction - The layout direction.
  */
+
 /**
  * Replace a specified list value with a new value (uses built in set-nth() if available)
  * @param {list} $list - The list of values you want to alter.
@@ -51,17 +59,20 @@
  * @returns {list} $list - The list with the value replaced or removed.
  * @warn if an invalid index is supplied.
  */
+
 /**
  * Reverse a list (progressively enhanced for Sass 3.3)
  * @param {list} $list - The list of values you want to reverse.
  * @returns {list} $result - The reversed list.
  */
+
 /**
  * Get the opposite direction to a given value.
  * @param {string} $dir - The direction you want the opposite of.
  * @returns {string} - The opposite direction to $dir.
  * @warn if an incorrect string is provided.
  */
+
 /**
  * Style an element as a column with a gutter.
  * @param {number} [$ratios=1] - A width relative to its container as a fraction.
@@ -70,28 +81,34 @@
  * @param {number} [$uncycle=0] - Undo a previous cycle value to allow for a new one.
  * @param {number} [$gutter=$jeet-gutter] - Specify the gutter width as a percentage of the containers width.
  */
+
 /**
  * An alias for the column mixin.
  * @param [$args...] - All arguments get passed through to column().
  */
+
 /**
  * Get the width of a column and nothing else.
  * @param {number} [$ratios=1] - A width relative to its container as a fraction.
  * @param {number} [$gutter=$jeet-gutter] - Specify the gutter width as a percentage of the containers width.
  */
+
 /**
  * Get the gutter size of a column and nothing else.
  * @param {number} [ratios=1] - A width relative to its container as a fraction.
  * @param {number} [gutter=jeet.gutter] - Specify the gutter width as a percentage of the containers width.
  */
+
 /**
  * An alias for the column-width function.
  * @param [$args...] - All arguments get passed through to column().
  */
+
 /**
  * An alias for the column-gutter function.
  * @param [$args...] - All arguments get passed through to column().
  */
+
 /**
  * Style an element as a column without any gutters for a seamless row.
  * @param {number} [$ratios=1] - A width relative to its container as a fraction.
@@ -99,49 +116,62 @@
  * @param {number} [cycle=0] - Easily create an nth column grid where cycle equals the number of columns.
  * @param {number} [uncycle=0] - Undo a previous cycle value to allow for a new one.
  */
+
 /**
  * Reorder columns without altering the HTML.
  * @param {number} [$ratios=0] - Specify how far along you want the element to move.
  * @param {string} [$col-or-span=column] - Specify whether the element has a gutter or not.
  * @param {number} [$gutter=$jeet-gutter] - Specify the gutter width as a percentage of the containers width.
  */
+
 /**
  * Reset an element that has had shift() applied to it.
  */
+
 /**
  * View the grid and its layers for easy debugging.
  * @param {string} [$color=black] - The background tint applied.
  * @param {boolean} [$important=false] - Whether to apply the style as !important.
  */
+
 /**
  *  Alias for edit().
  */
+
 /**
  * Horizontally center an element.
  * @param {number} [$max-width=1410px] - The max width the element can be.
  * @param {number} [$pad=0] - Specify the element's left and right padding.
  */
+
 /**
  * Uncenter an element.
  */
+
 /**
  * Stack an element so that nothing is either side of it.
  * @param {number} [$pad=0] - Specify the element's left and right padding.
  * @param {boolean/string} [$align=false] - Specify the text align for the element.
  */
+
 /**
  * Unstack an element.
  */
+
 /**
  * Center an element on either or both axes.
  * @requires A parent container with relative positioning.
  * @param {string} [$direction=both] - Specify which axes to center the element on.
  */
+
 /**
  * Apply a clearfix to an element.
  */
+
 /*! sass-bem-constructor - version : 1.0.0 - 2016-02-07 */
+
 @import url('http://fonts.googleapis.com/css?family=Raleway:100,300,400,700');
+
 html,
 body,
 div,
@@ -230,7 +260,7 @@ video
     margin: 0;
     padding: 0;
 
-    vertical-align: baseline; 
+    vertical-align: baseline;
 
     border: 0;
 }
@@ -278,7 +308,7 @@ q:after
 
 table
 {
-    border-spacing: 0; 
+    border-spacing: 0;
     border-collapse: collapse;
 }
 
@@ -302,13 +332,13 @@ h6
 
 ::-moz-selection
 {
-    color: #fff; 
+    color: #fff;
     background: #f1955c;
 }
 
 ::selection
 {
-    color: #fff; 
+    color: #fff;
     background: #f1955c;
 }
 
@@ -321,7 +351,7 @@ img
 {
     position: absolute;
 
-    visibility: hidden; 
+    visibility: hidden;
 
     width: 0;
     height: 0;
@@ -332,7 +362,7 @@ img
     display: block;
 
     width: 100%;
-    margin: 0 auto; 
+    margin: 0 auto;
 
     fill: currentColor;
     stroke: currentColor;
@@ -343,7 +373,7 @@ body
     font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.65; 
+    line-height: 1.65;
 
     color: #4a4a4a;
 }
@@ -392,40 +422,37 @@ label
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
-    padding: 0 10px; 
+    padding: 0 10px;
 
     *zoom: 1;
 }
+
 .container:before,
 .container:after
 {
-    display: table; 
+    display: table;
 
     content: '';
 }
+
 .container:after
 {
     clear: both;
-}
-@media (min-width: 48em)
-{
-    .container
-    {
-        width: 85%;
-    }
 }
 
 .row
 {
     *zoom: 1;
 }
+
 .row:before,
 .row:after
 {
-    display: table; 
+    display: table;
 
     content: '';
 }
+
 .row:after
 {
     clear: both;
@@ -438,7 +465,7 @@ label
     display:         flex;
             flex-direction: column;
 
-    max-width: 100%; 
+    max-width: 100%;
 
     text-align: center;
 
@@ -454,50 +481,39 @@ label
     -ms-flex-pack: center;
             justify-content: center;
 }
-@media (min-width: 48em)
-{
-    .row--flex
-    {
-                flex-direction: row;
-
-        -webkit-flex-direction: row;
-            -ms-flex-direction: row;
-        -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-                justify-content: space-around;
-    }
-}
 
 .vertical
 {
-            flex-direction: column; 
+            flex-direction: column !important;
 
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
+    -webkit-flex-direction: column !important;
+        -ms-flex-direction: column !important;
 }
 
 .horizontal
 {
-            flex-direction: row; 
+            flex-direction: row !important;
 
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
+    -webkit-flex-direction: row !important;
+        -ms-flex-direction: row !important;
 }
 
 .sample
 {
     padding: 20px 0;
 }
+
 .sample code
 {
-    margin: .625em 0; 
+    margin: .625em 0;
     padding: .3125em 1.875em;
 
     background: #d6d7d9;
 }
+
 .sample .half
 {
-    max-width: 100%; 
+    max-width: 100%;
 
     -webkit-align-self: flex-start;
     -ms-flex-item-align: start;
@@ -506,44 +522,19 @@ label
     -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
 }
-@media (min-width: 48em)
-{
-    .sample .half
-    {
-        max-width: 50%;
-        padding: .5em; 
 
-        -webkit-flex-basis: 50%;
-        -ms-flex-preferred-size: 50%;
-                flex-basis: 50%;
-    }
-}
-@media (min-width: 90em)
-{
-    .sample .half
-    {
-        -webkit-align-self: center;
-        -ms-flex-item-align: center;
-                align-self: center;
-    }
-}
 .sample h1
 {
     font-size: 3.21399em;
 }
-@media (min-width: 48em)
-{
-    .sample h1
-    {
-        font-size: 4.21399em;
-    }
-}
+
 .sample h4
 {
-    font-size: 1.77778em; 
+    font-size: 1.77778em;
 
     margin-bottom: .9375em;
 }
+
 .sample img
 {
     margin-top: .9375em;
@@ -551,17 +542,10 @@ label
     border: 8px solid white;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
 }
-@media (min-width: 48em)
-{
-    .sample img
-    {
-        max-width: 440px; 
-        margin: 0;
-    }
-}
+
 .sample .odin
 {
-    position: relative; 
+    position: relative;
 
     width: 9.375em;
     height: 5.625em;
@@ -571,14 +555,16 @@ label
     fill: #4a90e2;
     stroke: white;
 }
+
 .sample .odin:hover
 {
     -webkit-transform: rotate(-25deg) translate3d(0, 30%, 0);
-            transform: rotate(-25deg) translate3d(0, 30%, 0); 
+            transform: rotate(-25deg) translate3d(0, 30%, 0);
 
     fill: #ec7024;
     stroke-width: 3;
 }
+
 .sample .btn
 {
     font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -592,7 +578,7 @@ label
     padding: 1em 2em;
 
     transition: .2s ease-in-out;
-    text-decoration: none; 
+    text-decoration: none;
     letter-spacing: .15625em;
     text-transform: uppercase;
 
@@ -602,19 +588,23 @@ label
     outline: none;
     background: #ec7024;
 }
+
 .sample .btn:hover
 {
-    color: white; 
+    color: white;
     background: #d55c12;
 }
+
 .sample .btn:active
 {
     box-shadow: none;
 }
+
 .sample .btn:visited
 {
     color: white;
 }
+
 .sample .custom-font
 {
     font-family: 'Falco-Black', sans-serif;
@@ -625,6 +615,7 @@ label
 
     color: #4a90e2;
 }
+
 .sample .smart-link
 {
     text-decoration: none;
@@ -632,20 +623,23 @@ label
     color: #4a4a4a;
     background-image: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff), linear-gradient(#4a4a4a, #4a4a4a);
     background-repeat: no-repeat, no-repeat, repeat-x;
-    background-position: 0 90%, 100% 90%, 0 90%; 
+    background-position: 0 90%, 100% 90%, 0 90%;
     background-size: .05em 1px, .05em 1px, 1px 1px;
     text-shadow: .03em 0 #fff, -.03em 0 #fff, 0 .03em #fff, 0 -.03em #fff, .06em 0 #fff, -.06em 0 #fff, .09em 0 #fff, -.09em 0 #fff, .12em 0 #fff, -.12em 0 #fff, .15em 0 #fff, -.15em 0 #fff;
 }
+
 .sample .smart-link::-moz-selection
 {
-    background: #ec7024; 
+    background: #ec7024;
     text-shadow: .03em 0 #ec7024, -.03em 0 #ec7024, 0 .03em #ec7024, 0 -.03em #ec7024, .06em 0 #ec7024, -.06em 0 #ec7024, .09em 0 #ec7024, -.09em 0 #ec7024, .12em 0 #ec7024, -.12em 0 #ec7024, .15em 0 #ec7024, -.15em 0 #ec7024;
 }
+
 .sample .smart-link::selection
 {
-    background: #ec7024; 
+    background: #ec7024;
     text-shadow: .03em 0 #ec7024, -.03em 0 #ec7024, 0 .03em #ec7024, 0 -.03em #ec7024, .06em 0 #ec7024, -.06em 0 #ec7024, .09em 0 #ec7024, -.09em 0 #ec7024, .12em 0 #ec7024, -.12em 0 #ec7024, .15em 0 #ec7024, -.15em 0 #ec7024;
 }
+
 .sample .smart-link:before,
 .sample .smart-link:after,
 .sample .smart-link *,
@@ -654,20 +648,23 @@ label
 {
     text-shadow: none;
 }
+
 .sample .smart-link:visited
 {
     color: #4a4a4a;
 }
+
 .sample .odin-footer
 {
     width: 3.125em;
     height: 3.125em;
     margin-top: 1.5625em;
 
-    transition: 1s; 
+    transition: 1s;
 
     fill: #4d4d4d;
 }
+
 .sample .odin-footer:hover
 {
     -webkit-animation: rebote 1.5s infinite;
@@ -683,6 +680,7 @@ label
 
         fill: #2ba5e0;
     }
+
     80%
     {
         -webkit-transform: rotate(390deg);
@@ -701,6 +699,7 @@ label
 
         fill: #2ba5e0;
     }
+
     80%
     {
         -webkit-transform: rotate(390deg);
@@ -709,3 +708,55 @@ label
         fill: #ec7024;
     }
 }
+
+@media (min-width: 48em)
+{
+    .container
+    {
+        width: 85%;
+    }
+
+    .row--flex
+    {
+                flex-direction: row;
+
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+                justify-content: space-around;
+    }
+
+    .sample .half
+    {
+        max-width: 50%;
+        padding: .5em;
+
+        -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+                flex-basis: 50%;
+    }
+
+    .sample h1
+    {
+        font-size: 4.21399em;
+    }
+
+    .sample img
+    {
+        max-width: 440px;
+        margin: 0;
+    }
+}
+
+@media (min-width: 90em)
+{
+    .sample .half
+    {
+        -webkit-align-self: center;
+        -ms-flex-item-align: center;
+                align-self: center;
+    }
+}
+
+/*# sourceMappingURL=odin.css.map */
