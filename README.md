@@ -49,6 +49,4 @@ npm run githubDeploy
 
 - **Usa custom fonts en Base64** Fuck yeah! Tienes unas fonts que te pasaron en formato escritorio porque Diseñador? No importa metelas en tu carpeta `src/fonts` o si un paquete de Bower tiene sus fonts no las copies solo agrega su camino en config.coffee fonts!
 
-- [**Jeet**](http://jeet.gs/) a grid system for humans. porque el mundo no necesita otro sitio con bootstrap. Haz magia estilo Flexbox pero con soporte hasta IE9 + wuuu
-
 - [**Modular-Scale**](https://github.com/modularscale/modularscale-sass) - Plugin de Sass basado en [Type-Scale](http://type-scale.com/) nos permite ajustar tamaños de letra, margin, padding, etc etc de manera muy fácil en formatos EM y usando cuestiones de belleza matemática como Cuartos Perfectos (default), o Golden Ratio (como la cara de Britney Bitch) para que exista armonía y belleza en tus proyectos sin tener que andar pensando. 🍺

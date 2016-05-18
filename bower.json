@@ -1,5 +1,5 @@
 {
-  "name": "src",
+  "name": "ground-zero",
   "authors": [
     "mike3run <mpalauzarza@gmail.com>"
   ],
@@ -17,8 +17,6 @@
   ],
   "dependencies": {
     "jquery": "^2.2.2",
-    "modular-scale": "^2.1.1",
-    "bem-constructor": "^1.0.0",
-    "jeet": "^6.1.2"
+    "modular-scale": "^2.1.1"
   }
 }

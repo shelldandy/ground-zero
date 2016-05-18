@@ -1,8 +1,6 @@
 module.exports =
   # Here you add the paths to the scss files you get with Bower to import and work with.
   sassIncludes : [
-    './src/bower/bem-constructor/dist'
-    './src/bower/jeet/scss'
     './src/bower/modular-scale/stylesheets'
     ]
   # Here you add the paths to the full-length js files from your Bower imports
