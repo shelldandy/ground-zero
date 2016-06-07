@@ -1,4 +1,3 @@
-
 // Mixins de resets populares (Reset y Normalize 😍)
 @import "resets"
 
@@ -84,3 +83,33 @@
     display: table
   &:after
     clear: both
+
+// Quick mixin for svg sizes
+=size($width, $height : $width)
+  width: $width
+  height: $height
+
+
+// Color placeholder
+=placeholder($color : $black)
+  &::-webkit-input-placeholder
+	  color: $color
+  &::-moz-placeholder
+  	color: $color
+  	opacity: 1
+  &:-ms-input-placeholder
+	  color: $color
+  &::-ms-input-placeholder
+	  color: $color
+  &:placeholder-shown
+	  color: $color
+
+// Float-Columns
+=float-cols($cols, $total-cols : $columns--total)
+  float: left
+  width: percentage($cols / $total-cols)
+
+// Flex-Columns
+=flex-cols($cols, $total-cols : $columns--total)
+  max-width: percentage($cols / $total-cols)
+  flex-basis: percentage($cols / $total-cols)
