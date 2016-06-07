@@ -16,6 +16,8 @@ gulp.task 'browsersync', ->
       port: 1706
     server:
       baseDir : './dist'
+      serveStaticOptions :
+        extensions : ['html']
     open: false
     tunnel : false
     online : true
