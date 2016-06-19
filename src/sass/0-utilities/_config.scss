@@ -1,0 +1,61 @@
+// =======================================
+// =            Global Config            =
+// =======================================
+
+// Tipografía
+$font-url--google       : "http://fonts.googleapis.com/css?family=Raleway:100,300,400,700";
+$font-family--primary   : "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family--secondary : "Falco-Black", sans-serif;
+
+// Texto
+$base__font-size        : 16px;
+$base__line             : 1.65;
+$letter-space           : 1px;
+
+// Modular Scale - https://github.com/modularscale/modularscale-sass/tree/3.x
+$ms-base:  em($base__font-size);
+$ms-ratio: $fourth;
+
+
+// Pesos Tipográficos
+$fw--thin               : 100;
+$fw__extra-light        : 200;
+$fw--light              : 300;
+$fw--regular            : 400;
+$fw--medium             : 500;
+$fw--semi-bold          : 600;
+$fw--bold               : 700;
+$fw--extra-bold         : 800;
+$fw--ultra-bold         : 900;
+
+
+// Colores Descriptivos
+$white                  : #ffffff;
+$black                  : #4a4a4a;
+$gris                   : #797e83;
+$orange                 : #EC7024;
+
+$main-color             : $orange;
+
+
+// Uso de Colores
+$color-acento           : invert($main-color);
+$color-sombra           : rgba($black, 0.2);
+
+// Transiciones
+$trns-duration          : .3s;
+
+
+
+$column-gutter          : 20px;
+$columns--total         : 12;
+
+
+// Breakpoints
+$breakpoints: (
+  'phablet'     : em(414px),
+  'tablet'      : em(768px),
+  'laptop'      : em(1024px),
+  'desktop'     : em(1440px),
+  '4k'          : em(2560px)
+);

@@ -2,6 +2,7 @@ module.exports =
   # Here you add the paths to the scss files you get with Bower to import and work with.
   sassIncludes : [
     './src/bower/modular-scale/stylesheets'
+    './src/bower/manila-mixins/src'
     ]
   # Here you add the paths to the full-length js files from your Bower imports
   scriptFiles : [
