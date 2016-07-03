@@ -6,13 +6,15 @@ plugins       = require 'gulp-load-plugins'
 $             = plugins()
 config        = require './config'
 
+# On local dev Vanity URLs can work fine
 devLocals =
-  production : false
-  base : '/'
+  base : ''
+  extension : ''
 
+# But on Demo server we get the base and the .html extension
 prodLocals =
-  production : true
   base : config.productionBase
+  extension : config.productionExtension
 
 gulp.task 'pug', ->
   gulp.src './src/pug/**/!(_)*.pug'

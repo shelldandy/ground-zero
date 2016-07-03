@@ -1,6 +1,7 @@
 module.exports =
   # Just for my own sanity since some Hindi friend can't navigate properly
-  productionBase : '/'
+  productionBase : '/0000/2488'
+  productionExtension : '.html'
   # Here you add the paths to the scss files you get with Bower to import and work with.
   sassIncludes : [
     './src/bower/modular-scale/stylesheets'

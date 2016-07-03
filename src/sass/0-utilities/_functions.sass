@@ -5,3 +5,7 @@
 // Conversor bonito de ems
 @function em($objetivo, $base: $base__font-size)
   @return ($objetivo / $base) * 1em
+
+// The same but for REM
+@function rem($target)
+  @return ($target / $base__font-size) * 1rem

@@ -2,22 +2,23 @@
 // =            Global Config            =
 // =======================================
 
-// Tipografía
+// Typography
+
+// Use this to insert a Google Font the Import Function Comes from Manila Mixins
+// If you won't use Google Fonts you can use Null or remove the line.
 $font-url--google       : "http://fonts.googleapis.com/css?family=Raleway:100,300,400,700";
 $font-family--primary   : "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-family--secondary : "Falco-Black", sans-serif;
 
-// Texto
+// Text
 $base__font-size        : 16px;
 $base__line             : 1.65;
-$letter-space           : 1px;
 
 // Modular Scale - https://github.com/modularscale/modularscale-sass/tree/3.x
 $ms-base:  em($base__font-size);
 $ms-ratio: $fourth;
 
-
-// Pesos Tipográficos
+// Typographic Weights
 $fw--thin               : 100;
 $fw__extra-light        : 200;
 $fw--light              : 300;
@@ -28,28 +29,20 @@ $fw--bold               : 700;
 $fw--extra-bold         : 800;
 $fw--ultra-bold         : 900;
 
-
 // Colores Descriptivos
 $white                  : #ffffff;
 $black                  : #4a4a4a;
-$gris                   : #797e83;
+$gray                   : #797e83;
 $orange                 : #EC7024;
 
 $main-color             : $orange;
 
-
-// Uso de Colores
-$color-acento           : invert($main-color);
-$color-sombra           : rgba($black, 0.2);
-
 // Transiciones
 $trns-duration          : .3s;
 
-
-
+// Grid
 $column-gutter          : 20px;
 $columns--total         : 12;
-
 
 // Breakpoints
 $breakpoints: (
