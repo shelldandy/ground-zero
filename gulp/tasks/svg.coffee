@@ -8,7 +8,7 @@ runSequence   = require('run-sequence').use(gulp)
 config        = require './config'
 
 
-#This task outputs to the Jade Includes to place inline
+#This task outputs to the pug Includes to place inline
 gulp.task 'svg:inline', ->
   gulp.src './src/svg/inline/*.svg'
   .pipe $.plumber(errorHandler: onError)
@@ -24,7 +24,7 @@ gulp.task 'svg:inline', ->
     parserOptions :
       xmlMode : true
   )
-  .pipe gulp.dest './src/jade/layouts/includes'
+  .pipe gulp.dest './src/pug/layouts/includes'
 
 #This task outputs to the dist svg folder to use with cache etc.
 gulp.task 'svg:external', ->
