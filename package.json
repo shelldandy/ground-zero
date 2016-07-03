@@ -1,6 +1,6 @@
 {
   "name": "ground-zero",
-  "version": "2.9.0",
+  "version": "2.9.1",
   "description": "Punto de arranque para el nuevo proyecto de Don Mango Lite. Primer parada: Plaza de la Tecnología ;)",
   "main": "gulpfile.js",
   "scripts": {
