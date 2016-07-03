@@ -7,21 +7,21 @@ $             = plugins()
 config        = require './config'
 
 
-gulp.task 'jade', ->
-  gulp.src './src/jade/**/!(_)*.jade'
+gulp.task 'pug', ->
+  gulp.src './src/pug/**/!(_)*.pug'
   .pipe $.plumber(errorHandler: onError)
-  .pipe $.accord 'jade',
+  .pipe $.pug
     pretty : true
-    basedir : './src/jade'
+    basedir : './src/pug'
   .pipe gulp.dest config.exportPath + '/'
   .pipe browserSync.reload
     stream: true
 
 ## PRODUCTION  ##
-gulp.task 'production:jade', ->
-  gulp.src './src/jade/**/!(_)*.jade'
-  .pipe $.accord 'jade',
-    basedir : './src/jade'
+gulp.task 'production:pug', ->
+  gulp.src './src/pug/**/!(_)*.pug'
+  .pipe $.pug
+    basedir : './src/pug'
   .pipe gulp.dest config.exportPath + '/'
   .pipe browserSync.reload
     stream: true

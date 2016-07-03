@@ -25,13 +25,13 @@ gulp.task 'browsersync', ->
 
 # Simple Watch Command for a more serious one try production.coffee
 gulp.task 'watch', ['browsersync'], ->
-  gulp.watch 'src/jade/**'  , ['jade']
+  gulp.watch 'src/pug/**'  , ['pug']
   gulp.watch 'src/sass/**'  , ['sass']
   gulp.watch 'src/coffee/**', ['coffee']
   gulp.watch 'src/bower/**', ['scripts', 'sass']
   gulp.watch 'src/img/**'   , ['imagemin']
   gulp.watch 'src/assets/**', ['assets']
-  gulp.watch 'src/svg/**', ['svg', 'jade']
+  gulp.watch 'src/svg/**', ['svg', 'pug']
   gulp.watch 'src/fonts/**/*', ['fonts']
 
 # Default Task Because YOLO
@@ -45,7 +45,7 @@ gulp.task 'default', ->
     'assets',
     'svg:inline',
     'svg:external',
-    'jade',
+    'pug',
     'watch'
 
 # GitLab Task for Builds
@@ -59,4 +59,4 @@ gulp.task 'gitlab', ->
     'assets',
     'svg:inline',
     'svg:external',
-    'jade'
+    'pug'

@@ -13,14 +13,14 @@ gulp.task 'sass', ->
   .pipe $.sourcemaps.init()
   .pipe $.sass
     includePaths : config.sassIncludes
-    outputStyle : 'nested'
   .pipe $.autoprefixer
     browsers : ['last 2 versions']
   .pipe $.groupCssMediaQueries()
   .pipe $.csscomb()
   .pipe $.sourcemaps.write './'
   .pipe gulp.dest config.exportPath + '/css/'
-  .pipe browserSync.reload(stream : true)
+  .pipe browserSync.reload
+    stream : true
 
 ## Production
 gulp.task 'production:sass', ->
@@ -31,7 +31,11 @@ gulp.task 'production:sass', ->
   .pipe $.autoprefixer
     browsers : ['last 2 versions']
   .pipe $.groupCssMediaQueries()
+  .pipe $.uncss
+    html : config.uncssHtml
+    ignore : config.uncssIgnore
   .pipe $.csscomb()
   .pipe $.cssnano()
   .pipe gulp.dest config.exportPath + '/css/'
-  .pipe browserSync.reload(stream : true)
+  .pipe browserSync.reload
+    stream : true

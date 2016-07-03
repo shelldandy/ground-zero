@@ -5,13 +5,13 @@ runSequence       = require('run-sequence').use(gulp)
 
 # Serious Watch Command
 gulp.task 'production:watch', ['browsersync'], ->
-  gulp.watch 'src/jade/**'  , ['production:jade']
+  gulp.watch 'src/pug/**'  , ['production:pug']
   gulp.watch 'src/sass/**'  , ['production:sass']
   gulp.watch 'src/coffee/**', ['production:coffee']
   gulp.watch 'src/bower/**', ['production:scripts', 'production:sass']
   gulp.watch 'src/img/**'   , ['imagemin']
   gulp.watch 'src/assets/**', ['assets']
-  gulp.watch 'src/svg/**', ['svg', 'production:jade']
+  gulp.watch 'src/svg/**', ['svg', 'production:pug']
   gulp.watch 'src/fonts/**/*', ['fonts']
 
 
@@ -27,5 +27,5 @@ gulp.task 'production', ->
     'assets',
     'svg:inline',
     'svg:external',
-    'production:jade',
+    'production:pug',
     'production:watch'

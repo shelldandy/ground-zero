@@ -1,14 +1,12 @@
 {
   "name": "ground-zero",
-  "version": "2.8.0",
+  "version": "2.9.0",
   "description": "Punto de arranque para el nuevo proyecto de Don Mango Lite. Primer parada: Plaza de la Tecnología ;)",
   "main": "gulpfile.js",
   "scripts": {
     "test": "gulp test",
-    "firstTime": "npm install -g gulp browser-sync npm-cache bower",
-    "getReady": "npm-cache install bower npm",
-    "start": "gulp",
-    "githubDeploy": "gulp gitlab && gulp deploy && gulp clean"
+    "start": "npm i && bower i",
+    "deploy": "gulp gitlab && gulp deploy && gulp clean"
   },
   "repository": {
     "type": "git",
@@ -34,7 +32,6 @@
     "coffee-script": "*",
     "del": "*",
     "gulp": "*",
-    "gulp-accord": "*",
     "gulp-autoprefixer": "*",
     "gulp-cache": "*",
     "gulp-cheerio": "*",
@@ -50,6 +47,7 @@
     "gulp-newer": "*",
     "gulp-notify": "*",
     "gulp-plumber": "*",
+    "gulp-pug": "*",
     "gulp-sass": "*",
     "gulp-sourcemaps": "*",
     "gulp-svgmin": "*",
@@ -57,7 +55,6 @@
     "gulp-uglify": "*",
     "gulp-uncss": "*",
     "gulp-util": "*",
-    "jade": "*",
     "require-dir": "*",
     "run-sequence": "*"
   }
