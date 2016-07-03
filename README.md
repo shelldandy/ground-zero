@@ -1,5 +1,6 @@
 # Ground Zero
 ![Bart Simpson](https://media.giphy.com/media/26tPplGWjN0xLybiU/giphy.gif)
+
 Starting point for Front-End Projects
 
 ## Requirements
