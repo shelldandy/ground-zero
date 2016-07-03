@@ -10,3 +10,5 @@ node_modules
 *.css.map
 bower
 .publish
+# Para ignorar los svgs porque pues gulp
+inline.svg
