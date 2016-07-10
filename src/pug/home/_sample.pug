@@ -1,43 +1,126 @@
 section.sample
   .container
-    .row--flex.vertical
-      svg.icon.odin
-        use(xlink:href='#odin')
-      h1 Bienvenidos
-      h4 Ground Zero
-    .row--flex
-      .half.vertical
-        p Modifica esto a tu antojo con los archivos Jade y en cuanto estés listo corre el siguiente comando para compilar todo:
-        code gulp
-        p Una vez que quieras poner todo en modo producción (minimizado y comprimido) corre el siguiente comando:
-        code gulp production
-        p Si estás ocupando Github Pages y quieres subir el proyecto ahí simplemente puedes correr.
-        code npm run githubDeploy
-        p Checa este link perrón! Descubre como en el README
+
+    +svg('odin')
+
+    h1 Bitters example page
+    p The purpose of this HTML is to help determine what default settings are with Bitters and to make sure that all possible HTML Elements are included in this HTML so as to not miss any possible Elements when designing a site.
+    hr
+
+    h1 h1. Heading
+    h2 h2. Heading
+    h3 h3. Heading
+    h4 h4. Heading
+    h5 h5. Heading
+    h6 h6. Heading
+    hr
+    h1 Paragraph
+    p
+      | Lorem ipsum dolor sit amet,
+      a(href='#', title='test link') test link
+      |  adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
+    p
+      | Lorem ipsum dolor sit amet,
+      em emphasis
+      |  consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
+    hr
+    h1 List Types
+    h3 Definition List
+    dl
+      dt Definition List Title
+      dd This is a definition list division.
+    h3 Ordered List
+    ol
+      li List Item 1
+      li List Item 2
+      li List Item 3
+    h3 Unordered List
+    ul
+      li List Item 1
+      li List Item 2
+      li List Item 3
+    h3 %default-ol Ordered List
+    ol.default
+      li List Item 1
+      li List Item 2
+      li List Item 3
+    h3 %default-ul Unordered List
+    ul.default
+      li List Item 1
+      li List Item 2
+      li List Item 3
+    hr
+    h1 Fieldsets and Form Elements
+    fieldset
+      p
+        | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.
+      form
+        h2 Form Element
         p
-          a.smart-link(href='#', title='Cool Link') 50 ways of joyfully piquing intrigue
-        p Finalmente recibe un nopal sin ningún motivo aparente
-
-      .half.vertical
-        img(src='img/nopal.png', alt='Un nopal bonito')
-
-    .row--flex
-      a.btn(href='https://github.com/mike3run/ground-zero/archive/master.zip') Descarga aquí
-
-    .row--flex
-      h2.custom-font Yo soy texto con otra letra
-    .row--flex
-      p Revisa el README para aprender a hacerlo tu también 😍
-
-    a(href='http://geekybytes.mx/', target='_blank')
-      svg.icon.odin-footer
-        use(xlink:href='svg/external.svg#chochini')
-
-//- GitHub Corners! http://tholman.com/github-corners/
-a.github-corner(href='https://github.com/mike3run/ground-zero')
-      svg(width='80', height='80', viewbox='0 0 250 250', style='fill:#70B7FD; color:#fff; position: absolute; top: 0; border: 0; right: 0;')
-        path(d='M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z')
-        path.octo-arm(d='M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2', fill='currentColor', style='transform-origin: 130px 106px;')
-        path.octo-body(d='M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z', fill='currentColor')
-      style.
-            .github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}
+          | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui.
+        p
+          label(for='text_field') Text Field:
+          input#text_field(type='text')
+        p
+          label(for='text_area') Text Area:
+          textarea#text_area
+        p
+          label(for='select_element') Select Element:
+          select(name='select_element')
+            optgroup(label='Option Group 1')
+              option(value='1') Option 1
+              option(value='2') Option 2
+              option(value='3') Option 3
+            optgroup(label='Option Group 2')
+              option(value='1') Option 1
+              option(value='2') Option 2
+              option(value='3') Option 3
+        p
+          label(for='radio_buttons') Radio Buttons:
+          label
+            input.radio(type='radio', name='radio_button', value='radio_1')
+            |  Radio 1
+          label
+            input.radio(type='radio', name='radio_button', value='radio_2')
+            |  Radio 2
+          label
+            input.radio(type='radio', name='radio_button', value='radio_3')
+            |  Radio 3
+        p
+          label(for='checkboxes') Checkboxes:
+          label
+            input.checkbox(type='checkbox', name='checkboxes', value='check_1')
+            |  Checkbox 1
+          label
+            input.checkbox(type='checkbox', name='checkboxes', value='check_2')
+            |  Checkbox 2
+          label
+            input.checkbox(type='checkbox', name='checkboxes', value='check_3')
+            |  Checkbox 3
+        p
+          label(for='password') Password:
+          input.password(type='password', name='password')
+        p
+          label(for='file') File Input:
+          input.file(type='file', name='file')
+        p
+          input(type='submit', value='Submit')
+    hr
+    h1 Tables
+    table(cellspacing='0', cellpadding='0')
+      tr
+        th Table Header 1
+        th Table Header 2
+        th Table Header 3
+      tr
+        td Division 1
+        td Division 2
+        td Division 3
+      tr.even
+        td Division 1
+        td Division 2
+        td Division 3
+      tr
+        td Division 1
+        td Division 2
+        td Division 3
