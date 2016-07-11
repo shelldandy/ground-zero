@@ -1,0 +1,34 @@
+.block
+  display: block
+
+.inline
+  display: inline
+
+.inline-block
+  display: inline-block
+
+.flex
+  display: flex
+
+.hidden
+  display: none
+
+@each $name, $breakpoint in $breakpoints
+  @media (min-width: $breakpoint)
+    .hidden-#{$name}
+      display: none
+
+    .block-#{$name}
+      display: block
+
+    .inline-#{$name}
+      display: inline
+
+    .inline-block-#{$name}
+      display: inline-block
+
+    .flex-#{$name}
+      display: flex
+
+    .hide-#{$name}
+      display: none

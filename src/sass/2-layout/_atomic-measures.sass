@@ -1,0 +1,99 @@
+@for $i from 0 through $total-stops
+  // Font sizes
+  .fs-#{$i}
+    font-size: ms($i)
+  // Margins
+  .m-#{$i}
+    margin: ms($i)
+  .mt-#{$i}
+    margin-top: ms($i)
+  .mb-#{$i}
+    margin-bottom: ms($i)
+  .ml-#{$i}
+    margin-left: ms($i)
+  .mr-#{$i}
+    margin-right: ms($i)
+  .mx-#{$i}
+    margin-left: ms($i)
+    margin-right: ms($i)
+  .my-#{$i}
+    margin-top: ms($i)
+    margin-bottom: ms($i)
+  // Paddings
+  .p-#{$i}
+    padding: ms($i)
+  .pt-#{$i}
+    padding-top: ms($i)
+  .pb-#{$i}
+    padding-bottom: ms($i)
+  .pl-#{$i}
+    padding-left: ms($i)
+  .pr-#{$i}
+    padding-right: ms($i)
+  .px-#{$i}
+    padding-left: ms($i)
+    padding-right: ms($i)
+  .py-#{$i}
+    padding-top: ms($i)
+    padding-bottom: ms($i)
+
+  // Borders
+  .border
+    border-style: solid
+    border-width: 1px
+  .border-top
+    border-top-style: solid
+    border-top-width: 1px
+  .border-bottom
+    border-bottom-style: solid
+    border-bottom-width: 1px
+  .border-left
+    border-left-style: solid
+    border-left-width: 1px
+  .border-right
+    border-right-style: solid
+    border-right-width: 1px
+
+// Same thing but at each breakpoint
+@each $name, $breakpoint in $breakpoints
+  @media (min-width: $breakpoint)
+    @for $i from 0 through $total-stops
+      // Font sizes
+      .fs-#{$name}-#{$i}
+        font-size: ms($i)
+
+      // Margins
+      .m-#{$name}-#{$i}
+        margin: ms($i)
+      .mt-#{$name}-#{$i}
+        margin-top: ms($i)
+      .mb-#{$name}-#{$i}
+        margin-bottom: ms($i)
+      .ml-#{$name}-#{$i}
+        margin-left: ms($i)
+      .mr-#{$name}-#{$i}
+        margin-right: ms($i)
+      .mx-#{$name}-#{$i}
+        margin-left: ms($i)
+        margin-right: ms($i)
+      .my-#{$name}-#{$i}
+        margin-top: ms($i)
+        margin-bottom: ms($i)
+
+      // Paddings
+      .p-#{$name}-#{$i}
+        padding: ms($i)
+      .pt-#{$name}-#{$i}
+        padding-top: ms($i)
+      .pb-#{$name}-#{$i}
+        padding-bottom: ms($i)
+      .pl-#{$name}-#{$i}
+        padding-left: ms($i)
+      .pr-#{$name}-#{$i}
+        padding-right: ms($i)
+      .px-#{$name}-#{$i}
+        padding-left: ms($i)
+        padding-right: ms($i)
+      .py-#{$name}-#{$i}
+        padding-top: ms($i)
+        padding-bottom: ms($i)

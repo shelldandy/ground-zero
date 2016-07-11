@@ -15,8 +15,11 @@ $base__font-size        : 16px;
 $base__line             : 1.65;
 
 // Modular Scale - https://github.com/modularscale/modularscale-sass/tree/3.x
-$ms-base:  em($base__font-size);
-$ms-ratio: $fourth;
+$ms-base                :  1rem;
+$ms-ratio               : $major-third;
+
+// Stuff for the BassCss-like classes
+$total-stops            : 10;
 
 // Typographic Weights
 $fw--thin               : 100;
