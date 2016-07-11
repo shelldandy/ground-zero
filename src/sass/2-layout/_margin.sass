@@ -1,0 +1,93 @@
+.m-a
+  margin: auto
+
+.mt-a
+  margin-top: auto
+
+.mb-a
+  margin-bottom: auto
+
+.ml-a
+  margin-left: auto
+
+.mr-a
+  margin-right: auto
+
+.mx-a
+  margin-left: auto
+  margin-right: auto
+
+.my-a
+  margin-top: auto
+  margin-bottom: auto
+
+
+@for $i from 0 through $total-stops
+  .m-#{$i}
+    margin: ms($i)
+  .mt-#{$i}
+    margin-top: ms($i)
+  .mb-#{$i}
+    margin-bottom: ms($i)
+  .ml-#{$i}
+    margin-left: ms($i)
+  .mr-#{$i}
+    margin-right: ms($i)
+  .mx-#{$i}
+    margin-left: ms($i)
+    margin-right: ms($i)
+  .my-#{$i}
+    margin-top: ms($i)
+    margin-bottom: ms($i)
+
+// Same thing but at each breakpoint
+@each $name, $breakpoint in $breakpoints
+  @media (min-width: $breakpoint)
+
+    .m-#{$name}-a
+      margin: auto
+
+    .mt-#{$name}-a
+      margin-top: auto
+
+    .mb-#{$name}-a
+      margin-bottom: auto
+
+    .ml-#{$name}-a
+      margin-left: auto
+
+    .mr-#{$name}-a
+      margin-right: auto
+
+    .mx-#{$name}-a
+      margin-left: auto
+      margin-right: auto
+
+    .my-#{$name}-a
+      margin-top: auto
+      margin-bottom: auto
+
+    @for $i from 0 through $total-stops
+      // Margins
+      .m-#{$name}-#{$i}
+        margin: ms($i)
+
+      .mt-#{$name}-#{$i}
+        margin-top: ms($i)
+
+      .mb-#{$name}-#{$i}
+        margin-bottom: ms($i)
+
+      .ml-#{$name}-#{$i}
+        margin-left: ms($i)
+
+      .mr-#{$name}-#{$i}
+        margin-right: ms($i)
+
+      .mx-#{$name}-#{$i}
+        margin-left: ms($i)
+        margin-right: ms($i)
+
+      .my-#{$name}-#{$i}
+        margin-top: ms($i)
+        margin-bottom: ms($i)

@@ -1,0 +1,12 @@
+@for $i from 0 through $total-stops
+  // Font sizes
+  .fs-#{$i}
+    font-size: ms($i)
+
+// Same thing but at each breakpoint
+@each $name, $breakpoint in $breakpoints
+  @media (min-width: $breakpoint)
+    @for $i from 0 through $total-stops
+      // Font sizes
+      .fs-#{$name}-#{$i}
+        font-size: ms($i)

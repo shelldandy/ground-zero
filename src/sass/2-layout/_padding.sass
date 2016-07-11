@@ -1,0 +1,93 @@
+.p-a
+  padding: auto
+
+.pt-a
+  padding-top: auto
+
+.pb-a
+  padding-bottom: auto
+
+.pl-a
+  padding-left: auto
+
+.pr-a
+  padding-right: auto
+
+.px-a
+  padding-left: auto
+  padding-right: auto
+
+.py-a
+  padding-top: auto
+  padding-bottom: auto
+
+
+@for $i from 0 through $total-stops
+  .p-#{$i}
+    padding: ms($i)
+  .pt-#{$i}
+    padding-top: ms($i)
+  .pb-#{$i}
+    padding-bottom: ms($i)
+  .pl-#{$i}
+    padding-left: ms($i)
+  .pr-#{$i}
+    padding-right: ms($i)
+  .px-#{$i}
+    padding-left: ms($i)
+    padding-right: ms($i)
+  .py-#{$i}
+    padding-top: ms($i)
+    padding-bottom: ms($i)
+
+// Same thing but at each breakpoint
+@each $name, $breakpoint in $breakpoints
+  @media (min-width: $breakpoint)
+
+    .p-#{$name}-a
+      padding: auto
+
+    .pt-#{$name}-a
+      padding-top: auto
+
+    .pb-#{$name}-a
+      padding-bottom: auto
+
+    .pl-#{$name}-a
+      padding-left: auto
+
+    .pr-#{$name}-a
+      padding-right: auto
+
+    .px-#{$name}-a
+      padding-left: auto
+      padding-right: auto
+
+    .py-#{$name}-a
+      padding-top: auto
+      padding-bottom: auto
+
+    @for $i from 0 through $total-stops
+      // paddings
+      .p-#{$name}-#{$i}
+        padding: ms($i)
+
+      .pt-#{$name}-#{$i}
+        padding-top: ms($i)
+
+      .pb-#{$name}-#{$i}
+        padding-bottom: ms($i)
+
+      .pl-#{$name}-#{$i}
+        padding-left: ms($i)
+
+      .pr-#{$name}-#{$i}
+        padding-right: ms($i)
+
+      .px-#{$name}-#{$i}
+        padding-left: ms($i)
+        padding-right: ms($i)
+
+      .py-#{$name}-#{$i}
+        padding-top: ms($i)
+        padding-bottom: ms($i)
