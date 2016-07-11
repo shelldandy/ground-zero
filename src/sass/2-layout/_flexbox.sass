@@ -1,2 +1,68 @@
+// Flex-Wrap
+.flex-wrap
+  flex-wrap: wrap
+
+.flex-wrap-no
+  flex-wrap: nowrap
+
+.flex-wrap-reverse
+  flex-wrap: wrap-reverse
+
+// Justify Content
 .justify-content-center
   justify-content: center
+
+.justify-content-start
+  justify-content: flex-start
+
+.justify-content-end
+  justify-content: flex-end
+
+.justify-content-around
+  justify-content: space-around
+
+.justify-content-between
+  justify-content: space-between
+
+// Align Items
+.align-items-baseline
+  align-items: baseline
+
+.align-items-center
+  align-items: center
+
+.align-items-end
+  align-items: flex-end
+
+.align-items-start
+  align-items: flex-start
+
+.align-items-stretch
+  align-items: stretch
+
+// Flex Direction
+.flex-direction-column
+  flex-direction: column
+
+.flex-direction-column-reverse
+  flex-direction: column-reverse
+
+.flex-direction-row
+  flex-direction: row
+
+.flex-direction-row-reverse
+  flex-direction: row-reverse
+
+@each $name, $breakpoint in $breakpoints
+  @media (min-width: $breakpoint)
+    .flex-direction-column-#{$name}
+      flex-direction: column
+
+    .flex-direction-column-reverse-#{$name}
+      flex-direction: column-reverse
+
+    .flex-direction-row-#{$name}
+      flex-direction: row
+
+    .flex-direction-row-reverse-#{$name}
+      flex-direction: row-reverse
