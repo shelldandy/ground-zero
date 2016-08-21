@@ -6,32 +6,38 @@ const $             = plugins();
 const config        = require('../config');
 const onError       = require('./error');
 const when          = require('gulp-if');
-
 // Check if gulp scripts --prod or --production has been added to the task
 const argv          = require('yargs').argv;
 const production    = argv.prod || argv.production;
 
-const destination = `${config.exportPath}/assets/js`;
+const destination = `${config.exportPath}/assets/stylesheets`;
 
-gulp.task('scripts', done => {
-  return gulp.src(config.scriptFiles)
-  // Error Plumber to catch anything
+
+gulp.task('sass', done => {
+  return gulp.src('./src/sass/main.sass')
   .pipe( $.plumber( {errorHandler : onError} ) )
   .pipe( when( !production, $.sourcemaps.init() ) )
-  .pipe($.concat('main.js'))
+  .pipe( $.sass({
+    includePaths : config.sassIncludes
+  }) )
+  .pipe( $.autoprefixer({
+    browsers : ['last 2 versions']
+  }) )
+  .pipe( $.groupCssMediaQueries() )
+  .pipe( $.csscomb() )
   .pipe( when( !production, $.sourcemaps.write('./') ) )
   .pipe( gulp.dest(destination) )
 
-  // All production stuff here
-
-  // Rename file to .min and uglify that stuff
-  .pipe( when(production, $.rename({suffix : '.min'})) )
-  .pipe( when(production, $.uglify({
-    preserveComments : 'license'
+  .pipe( when( production, $.rename({suffix : '.min'}) ) )
+  .pipe( when( production, $.uncss({
+    html : config.uncssHtml,
+    ignore : config.uncssIgnore
   }) ) )
-  .pipe( when( production, gulp.dest(destination) ) )
+  .pipe( when( production, $.cssnano() ) )
+  .pipe( when(production, gulp.dest(destination) ) )
   // Finally make it uber small with gzip
   .pipe( when( production, $.gzip() ) )
   .pipe( when( production, gulp.dest(destination) ) );
   done();
+
 });

@@ -1,17 +1,17 @@
 'use strict';
-const gulp        = require('gulp')
-const clean       = require('del')
-const config      = require('../config')
+const gulp        = require('gulp');
+const clean       = require('del');
+const config      = require('../config');
 
 gulp.task( 'clean', done => {
   return clean([
-      `${config.distFolder}/**`,
-      `!${config.distFolder}`,
-      './.publish'
-    ])
-    done()
-  })
+    `${config.distFolder}/**`,
+    `!${config.distFolder}`,
+    './.publish'
+  ]);
+  done();
+});
 
 gulp.task( 'clean:git', () => {
-  return clean(['./.git'])
-})
+  return clean(['./.git']);
+});
