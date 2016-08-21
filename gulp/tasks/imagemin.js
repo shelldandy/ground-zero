@@ -16,6 +16,6 @@ gulp.task('imagemin', done => {
       removeDimensions : true
     }]
   }) )
-  .pipe( gulp.dest(`${config.exportPath}/images`) );
+  .pipe( gulp.dest(`${config.distFolder}/assets/images`) );
   done();
 });
