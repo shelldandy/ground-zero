@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 gulp              = require 'gulp'
 browserSync       = require 'browser-sync'
 runSequence       = require('run-sequence').use(gulp)

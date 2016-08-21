@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 gulp          = require 'gulp'
 browserSync   = require 'browser-sync'
 onError       = require './error'

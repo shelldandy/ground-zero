@@ -6,7 +6,8 @@
   "scripts": {
     "test": "gulp test",
     "start": "npm i && bower i",
-    "deploy": "gulp gitlab && gulp deploy && gulp clean"
+    "deploy": "gulp gitlab && gulp deploy && gulp clean",
+    "gulp": "gulp"
   },
   "repository": {
     "type": "git",
@@ -29,9 +30,8 @@
   "homepage": "https://github.com/mike3run/ground-zero#readme",
   "devDependencies": {
     "browser-sync": "*",
-    "coffee-script": "*",
     "del": "*",
-    "gulp": "*",
+    "gulp": "github:gulpjs/gulp#4.0",
     "gulp-autoprefixer": "*",
     "gulp-cache": "*",
     "gulp-cheerio": "*",
@@ -42,12 +42,15 @@
     "gulp-cssnano": "*",
     "gulp-gh-pages": "*",
     "gulp-group-css-media-queries": "*",
+    "gulp-gzip": "^1.4.0",
+    "gulp-if": "^2.0.1",
     "gulp-imagemin": "*",
     "gulp-load-plugins": "*",
     "gulp-newer": "*",
     "gulp-notify": "*",
     "gulp-plumber": "*",
     "gulp-pug": "*",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "*",
     "gulp-sourcemaps": "*",
     "gulp-svgmin": "*",
@@ -56,6 +59,7 @@
     "gulp-uncss": "*",
     "gulp-util": "*",
     "require-dir": "*",
-    "run-sequence": "*"
+    "run-sequence": "*",
+    "yargs": "^5.0.0"
   }
 }

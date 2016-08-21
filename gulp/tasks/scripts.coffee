@@ -1,9 +1,9 @@
-'use strict'
-gulp          = require 'gulp'
-browserSync   = require 'browser-sync'
-config        = require './config'
-onError       = require './error'
-plugins       = require 'gulp-load-plugins'
+'use strict';
+gulp          = require('gulp')
+browserSync   = require('browser-sync')
+config        = require('../config')
+onError       = require('./error')
+plugins       = require('gulp-load-plugins')
 $             = plugins()
 
 
