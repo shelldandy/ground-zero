@@ -12,6 +12,7 @@ gulp.task( 'clean', done => {
   done();
 });
 
-gulp.task( 'clean:git', () => {
+gulp.task( 'clean:git', done => {
   return clean(['./.git']);
+  done();
 });
