@@ -9,8 +9,6 @@ const when          = require('gulp-if');
 const argv          = require('yargs').argv;
 const production    = argv.prod || argv.production;
 
-const destination = `${config.exportPath}/assets/stylesheets`;
-
 const devLocals = {
   base : '',
   extension : '',
@@ -36,6 +34,6 @@ gulp.task('pug', done => {
     basedir : './src/pug',
     locals : prodLocals
   }) ) )
-  .pipe( gulp.dest(`${config.exportPath}/`) );
+  .pipe( gulp.dest(config.distFolder) );
   done();
 });

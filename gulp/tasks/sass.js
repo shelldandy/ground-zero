@@ -10,7 +10,7 @@ const when          = require('gulp-if');
 const argv          = require('yargs').argv;
 const production    = argv.prod || argv.production;
 
-const destination = `${config.exportPath}/assets/stylesheets`;
+const destination = `${config.distFolder}/assets/stylesheets`;
 
 
 gulp.task('sass', done => {
