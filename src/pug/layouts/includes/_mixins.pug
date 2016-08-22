@@ -1,3 +1,7 @@
-mixin svg(name)
+mixin inline-svg(name)
   svg.icon(class=name)
     use(xlink:href=`#${name}`)
+
+mixin svg(name)
+  svg.icon(class=name)
+    use(xlink:href=`assets/svg/symbols.svg#${name}`)

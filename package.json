@@ -6,8 +6,9 @@
   "scripts": {
     "test": "gulp test",
     "start": "npm i && bower i",
-    "deploy": "gulp gitlab && gulp deploy && gulp clean",
-    "gulp": "gulp"
+    "deploy": "gulp deploy",
+    "gulp": "gulp",
+    "build" : "gulp build"
   },
   "repository": {
     "type": "git",

@@ -22,7 +22,8 @@ module.exports = {
   scriptFiles : [
     './src/bower/jquery/dist/jquery.min.js',
     './src/bower/svg4everybody/dist/svg4everybody.min.js',
-    './src/scripts/**/*.js'
+    './src/scripts/plugins/*.js',
+    './src/scripts/*.js'
   ],
   // Path to un-worked font files
   fonts : [
