@@ -1,33 +1,40 @@
 doctype html
-html(lang='es')
+html(lang='en')
 	head
+		block title
+			title Ground Zero
 		meta(charset='utf-8')
 		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0")
-		title Ground Zero
 		//- Favicons and Android NavBar Color
 		link(rel='icon', href='img/favicon.ico')
 		link(rel='icon', type='image/png', href='img/favicon.png')
 		meta(name='theme-color', content='#2ba5e0')
 		//- CSS Files
-		link(rel='stylesheet', href='css/fonts.css')
-		link(rel='stylesheet', href='css/odin.css')
+		//- Uncomment this if you need to access custom fonts made with base64
+		//- link(rel='stylesheet', href='assets/stylesheets/fonts.css')
+		if productionMode
+			link(rel='stylesheet', href='assets/stylesheets/main.min.css')
+		else
+			link(rel='stylesheet', href='assets/stylesheets/main.css')
 		block head
 			//- If extra head content is necessary per page, it can be added in index.jade
 
 	body
 		include ./includes/_mixins
-		div.is-hidden
+		.is-hidden
 			include ./includes/inline.svg
 
 		include ./general/_menu
 		block content
 			//- This gets replaced by content in index.jade
-		
+
 		include ./general/_footer
 		block footer
 			//- If extra footer content is necessary per page, it can be added in index.jade
-		
-		script(src="js/vendor.js")
-		script(src='js/app.js')
-			
+
+		if productionMode
+			script(src='assets/javascript/main.min.js')
+		else
+			script(src='assets/javascript/main.js')
+		//- If extra scripts are needed replace here
 		block scripts

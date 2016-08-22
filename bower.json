@@ -18,6 +18,7 @@
   "dependencies": {
     "jquery": "^2.2.2",
     "modular-scale": "^2.1.1",
-    "manila-mixins": "*"
+    "manila-mixins": "*",
+    "svg4everybody": "^2.1.0"
   }
 }
