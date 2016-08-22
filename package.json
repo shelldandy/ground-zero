@@ -1,6 +1,6 @@
 {
   "name": "ground-zero",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Starting point for Front-End Projects",
   "main": "gulpfile.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "start": "npm i && bower i",
     "deploy": "gulp deploy",
     "gulp": "gulp",
-    "build" : "gulp build"
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
