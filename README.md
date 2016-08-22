@@ -1,11 +1,11 @@
-# Ground Zero
-![Bart Simpson](https://media.giphy.com/media/26tPplGWjN0xLybiU/giphy.gif)
+# Ground Zero Version 4
+![Bart Simpson](https://i.giphy.com/l4Ho0UxScKzfY0HIc.gif)
 
-Starting point for Front-End Projects
+Starting point for Front-End Projects using Gulp 4.0alpha 2
 
 ## Requirements
-- NodeJS (Recommended 4.4.6)
-- npm (Recommended 3.10.4)
+- NodeJS (Recommended 4.4.7)
+- npm (Recommended 3.10.6)
 
 ## Install
 
