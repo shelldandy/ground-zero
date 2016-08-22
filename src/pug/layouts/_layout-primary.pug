@@ -1,15 +1,17 @@
 doctype html
 html(lang='en')
 	head
+		block title
+			title Ground Zero
 		meta(charset='utf-8')
 		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0")
-		title Ground Zero
 		//- Favicons and Android NavBar Color
 		link(rel='icon', href='img/favicon.ico')
 		link(rel='icon', type='image/png', href='img/favicon.png')
 		meta(name='theme-color', content='#2ba5e0')
 		//- CSS Files
-		link(rel='stylesheet', href='assets/stylesheets/fonts.css')
+		//- Uncomment this if you need to access custom fonts made with base64
+		//- link(rel='stylesheet', href='assets/stylesheets/fonts.css')
 		if productionMode
 			link(rel='stylesheet', href='assets/stylesheets/main.min.css')
 		else
