@@ -34,8 +34,6 @@ gulp deploy
 
 - **SVG Power!**: Work with SVG like a bawse! Just drop'em either on the `src/svg/inline` or `src/svg/external` to generate svg icons like font icons but much better ♥️
 
-- **BEM/SMACSS** Configure almost everything on `src/sass/0-utilities/_config.scss`
-
 - **Base64 Fonts**: Have you ever had the asshole designer that only gives you .ttf fonts for you to deal with? Maybe you are trying some fonts before going for a full web license. Just drop'em on the `src/fonts` directory and we'll have you covered.
 
 - [**Modular-Scale**](https://github.com/modularscale/modularscale-sass) - Sass Plugin based on [Type-Scale](http://type-scale.com/) using math ratios to have beauty integrated on our project.
