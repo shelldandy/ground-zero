@@ -4,7 +4,7 @@
 Starting point for Front-End Projects using Gulp 4.0alpha 2
 
 ## Requirements
-- NodeJS (Recommended 4.4.7)
+- NodeJS (Recommended 4.5.0)
 - npm (Recommended 3.10.6)
 
 ## Install
