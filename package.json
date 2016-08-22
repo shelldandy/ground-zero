@@ -46,7 +46,6 @@
     "gulp-if": "^2.0.1",
     "gulp-imagemin": "*",
     "gulp-load-plugins": "*",
-    "gulp-newer": "*",
     "gulp-notify": "*",
     "gulp-plumber": "*",
     "gulp-pug": "*",
@@ -59,7 +58,6 @@
     "gulp-uncss": "*",
     "gulp-util": "*",
     "require-dir": "*",
-    "run-sequence": "*",
     "yargs": "^5.0.0"
   }
 }
