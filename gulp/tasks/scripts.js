@@ -11,7 +11,7 @@ const when          = require('gulp-if');
 const argv          = require('yargs').argv;
 const production    = argv.prod || argv.production;
 
-const destination = `${config.distFolder}/assets/js`;
+const destination = `${config.distFolder}/assets/javascript`;
 
 gulp.task('scripts', done => {
   return gulp.src(config.scriptFiles)
