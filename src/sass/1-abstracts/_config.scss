@@ -19,7 +19,7 @@ $ms-base                :  1rem;
 $ms-ratio               : $major-third;
 
 // Stuff for the BassCss-like classes
-$total-stops            : 10;
+$total-stops            : 5;
 
 // Typographic Weights
 $fw--thin               : 100;
@@ -32,7 +32,7 @@ $fw--bold               : 700;
 $fw--extra-bold         : 800;
 $fw--ultra-bold         : 900;
 
-// Colores Descriptivos
+// Colors
 $white                  : #ffffff;
 $black                  : #4a4a4a;
 $gray                   : #797e83;
@@ -41,7 +41,7 @@ $blue                   : #2ba5e0;
 
 $main-color             : $orange;
 
-// Transiciones
+// Transitions
 $trns-duration          : .3s;
 
 // Grid
@@ -50,9 +50,7 @@ $columns--total         : 12;
 
 // Breakpoints
 $breakpoints: (
-  'phablet'     : em(414px),
   'tablet'      : em(768px),
   'laptop'      : em(1024px),
-  'desktop'     : em(1440px),
-  '4k'          : em(2560px)
+  'desktop'     : em(1440px)
 );

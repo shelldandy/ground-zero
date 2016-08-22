@@ -9,7 +9,8 @@ module.exports = {
   // Here you add the paths to the scss files you get with Bower to import and work with.
   sassIncludes : [
     './src/bower/modular-scale/stylesheets',
-    './src/bower/manila-mixins/src'
+    './src/bower/manila-mixins/src',
+    './src/bower/bem-constructor/dist'
   ],
   // Stuff for UnCss
   uncssHtml : [
@@ -33,5 +34,9 @@ module.exports = {
   // Asset File Paths
   assets : [
     './src/assets/**/*'
-  ]
+  ],
+  errorHandler : function (error) {
+    console.log(error.toString());
+    this.emit('end');
+  }
 }

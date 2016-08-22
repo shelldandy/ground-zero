@@ -19,6 +19,7 @@
     "jquery": "^2.2.2",
     "modular-scale": "^2.1.1",
     "manila-mixins": "*",
-    "svg4everybody": "^2.1.0"
+    "svg4everybody": "^2.1.0",
+    "bem-constructor": "^1.1.0"
   }
 }

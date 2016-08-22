@@ -4,7 +4,6 @@ const gulp          = require('gulp');
 const plugins       = require('gulp-load-plugins');
 const $             = plugins();
 const config        = require('../config');
-const onError       = require('./error');
 const when          = require('gulp-if');
 // Check if gulp scripts --prod or --production has been added to the task
 const argv          = require('yargs').argv;
@@ -15,11 +14,11 @@ const destination = `${config.distFolder}/assets/stylesheets`;
 
 gulp.task('sass', done => {
   return gulp.src('./src/sass/main.sass')
-  .pipe( $.plumber( {errorHandler : onError} ) )
   .pipe( when( !production, $.sourcemaps.init() ) )
   .pipe( $.sass({
     includePaths : config.sassIncludes
   }) )
+  .on('error', config.errorHandler)
   .pipe( $.autoprefixer({
     browsers : ['last 2 versions']
   }) )

@@ -44,8 +44,6 @@
     "gulp-if": "^2.0.1",
     "gulp-imagemin": "*",
     "gulp-load-plugins": "*",
-    "gulp-notify": "*",
-    "gulp-plumber": "*",
     "gulp-pug": "*",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "*",
@@ -55,7 +53,6 @@
     "gulp-svgstore": "*",
     "gulp-uglify": "*",
     "gulp-uncss": "*",
-    "gulp-util": "*",
     "require-dir": "*",
     "yargs": "^5.0.0"
   }

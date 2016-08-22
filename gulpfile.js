@@ -42,7 +42,7 @@ gulp.task('browser-sync', done => {
   done();
 });
 
-gulp.task('watch', () => {
+gulp.task('watch', done => {
   gulp.watch('src/svg/inline/**/*', gulp.series('svg:inline', reload));
   gulp.watch('src/svg/external/**/*', gulp.series('svg:external', reload));
   gulp.watch('src/pug/**/*', gulp.series('pug', reload));
@@ -50,6 +50,7 @@ gulp.task('watch', () => {
   gulp.watch('src/scripts/**/*', gulp.series('scripts', reload));
   gulp.watch('src/assets/**/*', gulp.series('assets', reload));
   gulp.watch('src/fonts/**/*', gulp.series('fonts', reload));
+  done();
 });
 
 gulp.task('serve', gulp.parallel('browser-sync', 'watch'));

@@ -3,11 +3,9 @@ const gulp          = require('gulp');
 const plugins       = require('gulp-load-plugins');
 const $             = plugins();
 const config        = require('../config');
-const onError       = require('./error');
 
 gulp.task('svg:inline', done => {
   return gulp.src('./src/svg/inline/*.svg')
-  .pipe( $.plumber( {errorHandler : onError} ) )
   .pipe( $.svgmin({
     plugins : [{
       removeStyleElement : true
@@ -25,7 +23,6 @@ gulp.task('svg:inline', done => {
 
 gulp.task('svg:externalFILE', done => {
   return gulp.src('./src/svg/external/*.svg')
-  .pipe( $.plumber( {errorHandler : onError} ) )
   .pipe( $.svgmin({
     plugins : [{
       removeStyleElement : true
@@ -47,7 +44,6 @@ gulp.task('svg:externalFILE', done => {
 
 gulp.task('svg:externalPNG', done => {
   return gulp.src('./src/svg/external/*.svg')
-  .pipe( $.plumber( {errorHandler : onError} ) )
   .pipe( $.svg2png() )
   .pipe( gulp.dest(`${config.distFolder}/assets/svg`) );
   done();
