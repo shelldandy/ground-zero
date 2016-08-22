@@ -23,7 +23,7 @@ gulp.task('svg:inline', done => {
 });
 
 
-gulp.task('svg:external', done => {
+gulp.task('svg:externalFILE', done => {
   return gulp.src('./src/svg/external/*.svg')
   .pipe( $.plumber( {errorHandler : onError} ) )
   .pipe( $.svgmin({
@@ -33,10 +33,11 @@ gulp.task('svg:external', done => {
       removeAttrs : {
         attrs : ['fill', 'stroke', 'fill.*', 'stroke.*']
       }
-    }],
-    js2svg: {
-      pretty: true
-    }
+    }]
+    // Uncomment below for pretty SVG output
+    // ,js2svg: {
+    //   pretty: true
+    // }
   }) )
   .pipe( $.svgstore() )
   .pipe( $.rename('symbols.svg') )
@@ -52,3 +53,7 @@ gulp.task('svg:externalPNG', done => {
   done();
 
 });
+
+gulp.task('svg:external', gulp.parallel( 'svg:externalFILE', 'svg:externalPNG'));
+
+gulp.task('svg', gulp.parallel('svg:inline', 'svg:external'));
