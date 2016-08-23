@@ -1,6 +1,6 @@
 {
   "name": "ground-zero",
-  "version": "4.1.0",
+  "version": "4.2.0",
   "description": "Starting point for Front-End Projects",
   "main": "gulpfile.js",
   "scripts": {
