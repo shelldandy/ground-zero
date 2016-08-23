@@ -21,7 +21,7 @@ gulp.task('svg:inline', done => {
 });
 
 
-gulp.task('svg:externalFILE', done => {
+gulp.task('svg:external', done => {
   return gulp.src('./src/svg/external/*.svg')
   .pipe( $.svgmin({
     plugins : [{
@@ -42,14 +42,5 @@ gulp.task('svg:externalFILE', done => {
   done();
 });
 
-gulp.task('svg:externalPNG', done => {
-  return gulp.src('./src/svg/external/*.svg')
-  .pipe( $.svg2png() )
-  .pipe( gulp.dest(`${config.distFolder}/assets/svg`) );
-  done();
-
-});
-
-gulp.task('svg:external', gulp.parallel( 'svg:externalFILE', 'svg:externalPNG'));
 
 gulp.task('svg', gulp.parallel('svg:inline', 'svg:external'));
