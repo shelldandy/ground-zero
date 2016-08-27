@@ -20,8 +20,7 @@ const prodLocals = {
   productionMode : true
 };
 
-
-gulp.task('pug', done => {
+const pug = done => {
   return gulp.src('./src/pug/**/!(_)*.pug')
   .pipe( when( !production, $.pug({
     pretty : true,
@@ -34,4 +33,8 @@ gulp.task('pug', done => {
   }) ) ).on('error', config.errorHandler)
   .pipe( gulp.dest(config.distFolder) );
   done();
-});
+};
+
+gulp.task('pug', pug);
+
+module.exports = pug;
