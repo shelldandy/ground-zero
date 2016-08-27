@@ -4,13 +4,11 @@ const plugins       = require('gulp-load-plugins');
 const $             = plugins();
 const config        = require('../config');
 
-
-const assets = done => {
-  return gulp.src(config.assets)
-  .pipe( gulp.dest( `${config.distFolder}/assets/misc` ) );
+gulp.task('fonts', done => {
+  return gulp.src(config.fonts)
+  .pipe( $.cssfont64() )
+  .pipe( $.concat('fonts.css') )
+  .pipe( gulp.dest(`${config.distFolder}/assets/stylesheets`) );
   done();
-};
 
-gulp.task('assets', assets);
-
-module.exports = assets;
+});
