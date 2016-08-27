@@ -18,7 +18,7 @@ gulp.task('sass', done => {
   .pipe( $.sass({
     includePaths : config.sassIncludes
   }) )
-  .on('error', sass.logError )
+  .on('error', $.sass.logError )
   .pipe( $.autoprefixer({
     browsers : ['last 2 versions']
   }) )
