@@ -32,6 +32,7 @@
   "devDependencies": {
     "browser-sync": "*",
     "chai": "^3.5.0",
+    "cheerio": "^0.22.0",
     "del": "*",
     "eslint": "^3.5.0",
     "gulp": "github:gulpjs/gulp#4.0",
