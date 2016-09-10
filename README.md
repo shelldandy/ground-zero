@@ -37,3 +37,7 @@ gulp deploy
 - **Base64 Fonts**: Have you ever had the asshole designer that only gives you .ttf fonts for you to deal with? Maybe you are trying some fonts before going for a full web license. Just drop'em on the `src/fonts` directory and we'll have you covered.
 
 - [**Modular-Scale**](https://github.com/modularscale/modularscale-sass) - Sass Plugin based on [Type-Scale](http://type-scale.com/) using math ratios to have beauty integrated on our project.
+
+## How to contribute
+
+If you wish to contribute to ground-zero, just fork it and submit a PR.
