@@ -1,0 +1,33 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "rules": {
+    "indent": [2, 2],
+    "no-undef": 2,
+    "no-unreachable": 1,
+    "no-unused-expressions": 1,
+    "no-shadow": 1,
+    "comma-dangle": [1, "only-multiline"],
+    "no-multi-spaces": [1, {
+      "exceptions": {
+        "VariableDeclarator": true
+      }
+    }],
+    "no-shadow-restricted-names": 0,
+    "no-var": 2,
+    "prefer-const": 1,
+    "max-len": [1, {"code": 100, "comments": 150}],
+    "eqeqeq": [2, "smart"],
+    "no-dupe-keys": 2,
+    "no-duplicate-case": 2,
+    "no-extra-semi": 2,
+    "no-extra-parens": 2,
+    "max-depth": [1, 4],
+    "no-empty": 2
+  }
+}
