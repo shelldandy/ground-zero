@@ -32,3 +32,12 @@ describe('pug gulp task tests suite', function () {
     });
   });
 });
+
+describe('pug task with --prod flag on tests suite', function() {
+  afterEach(function (done) {
+    utils.runTask('clean', done);
+  })
+
+  it('should output minified html')
+  it('should output valid html')
+})
