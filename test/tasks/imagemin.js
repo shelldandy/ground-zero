@@ -6,12 +6,12 @@ const assert = chai.assert;
 
 describe('imagemin gulp task tests suite', function () {
 
-  beforeEach(function (done) {
+  before(function (done) {
     utils.runTask('imagemin', done);
   });
 
-  afterEach(function (done) {
-    done();
+  after(function (done) {
+    utils.runTask('clean', done);
   });
 
   function getOriginalAndMinifiedImages(cb) {
