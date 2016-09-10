@@ -4,7 +4,7 @@
   "description": "Starting point for Front-End Projects",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "gulp test",
+    "test": "NODE_ENV=test mocha",
     "start": "npm i && bower i",
     "deploy": "gulp deploy",
     "gulp": "gulp",
@@ -31,6 +31,7 @@
   "homepage": "https://github.com/mike3run/ground-zero#readme",
   "devDependencies": {
     "browser-sync": "*",
+    "chai": "^3.5.0",
     "del": "*",
     "eslint": "^3.5.0",
     "gulp": "github:gulpjs/gulp#4.0",
