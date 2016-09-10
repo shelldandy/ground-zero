@@ -29,7 +29,6 @@ const scripts = done => {
   // Finally make it uber small with gzip
   .pipe( when( production, $.gzip() ) )
   .pipe( when( production, gulp.dest(destination) ) );
-  done();
 };
 
 gulp.task('scripts', scripts);

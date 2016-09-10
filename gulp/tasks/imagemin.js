@@ -4,7 +4,7 @@ const plugins       = require('gulp-load-plugins');
 const $             = plugins();
 const config        = require('../config');
 
-gulp.task('imagemin', done => {
+gulp.task('imagemin', () => {
   return gulp.src('./src/images/**/*')
   .pipe( $.imagemin({
     progressive : true,
@@ -15,5 +15,4 @@ gulp.task('imagemin', done => {
     }]
   }) )
   .pipe( gulp.dest(`${config.distFolder}/assets/images`) );
-  done();
 });

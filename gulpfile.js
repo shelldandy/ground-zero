@@ -28,7 +28,7 @@ function reload(done) {
   done();
 }
 
-gulp.task('browser-sync', done => {
+gulp.task('browser-sync', () => {
   return browserSync.init({
     server : {
       baseDir : config.distFolder,
@@ -39,7 +39,6 @@ gulp.task('browser-sync', done => {
     open : false,
     logConnections : true
   });
-  done();
 });
 
 gulp.task('watch', done => {
