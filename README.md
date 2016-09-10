@@ -41,3 +41,8 @@ gulp deploy
 ## How to contribute
 
 If you wish to contribute to ground-zero, just fork it and submit a PR.
+
+### Linting
+
+We use ESLint version 3.x as our default linter, make sure you've got a proper linter plugin or add-on for your editor.
+Check the rules set picked in our `.eslintrc` file.
