@@ -1,6 +1,6 @@
 'use strict';
 
-const files = require('./file-asserts');
+const files = require('./files');
 const runTask = require('./run-task');
 
 const runTaskAndAssertFile = (task, fileName, cwd, cb) => {
