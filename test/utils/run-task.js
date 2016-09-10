@@ -8,10 +8,6 @@ const execOptions = {
 
 module.exports = function (taskName, done) {
   const task = spawn('gulp', [taskName], execOptions);
-  task.on('error', function (err) {
-    done(err);
-  });
-  task.on('exit', function (code) {
-    done();
-  });
+  task.on('error', done);
+  task.on('exit', done);
 }
