@@ -53,6 +53,7 @@
     "gulp-svgstore": "*",
     "gulp-uglify": "*",
     "gulp-uncss": "*",
+    "mocha": "^3.0.2",
     "require-dir": "*",
     "yargs": "^5.0.0"
   }
