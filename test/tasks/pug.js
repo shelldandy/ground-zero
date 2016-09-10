@@ -12,6 +12,7 @@ describe('pug gulp task tests suite', function () {
 
   afterEach(function (done) {
     utils.runTask('clean', done);
+    process.env.PRODUCTION_TEST = false;
   });
 
   it('Should create a an index.html', function (done) {
@@ -33,6 +34,10 @@ describe('pug gulp task tests suite', function () {
   });
 
   describe('pug tasks with --prod flag on tests suite', function() {
+    beforeEach(function () {
+      process.env.PRODUCTION_TEST = true;
+    });
+    
     it('should output minified html');
     it('should output valid html');
   });
