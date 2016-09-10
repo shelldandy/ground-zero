@@ -7,7 +7,8 @@ const execOptions = {
 };
 
 module.exports = function (taskName, done) {
-  const task = spawn('gulp', [taskName], execOptions);
+  let args = process.env.PRODUCTION_TEST ? [taskName, '--prod'] : [taskName];
+  const task = spawn('gulp', args, execOptions);
   task.on('error', done);
   task.on('exit', done);
 }
