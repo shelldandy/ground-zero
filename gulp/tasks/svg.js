@@ -4,7 +4,7 @@ const plugins       = require('gulp-load-plugins');
 const $             = plugins();
 const config        = require('../config');
 
-gulp.task('svg:inline', done => {
+gulp.task('svg:inline', () => {
   return gulp.src('./src/svg/inline/*.svg')
   .pipe( $.svgmin({
     plugins : [{
@@ -17,11 +17,10 @@ gulp.task('svg:inline', done => {
   }) )
   .pipe( $.svgstore( {inlineSvg : true} ) )
   .pipe( gulp.dest('./src/pug/layouts/includes') );
-  done();
 });
 
 
-gulp.task('svg:external', done => {
+gulp.task('svg:external', () => {
   return gulp.src('./src/svg/external/*.svg')
   .pipe( $.svgmin({
     plugins : [{
@@ -39,7 +38,6 @@ gulp.task('svg:external', done => {
   .pipe( $.svgstore() )
   .pipe( $.rename('symbols.svg') )
   .pipe( gulp.dest(`${config.distFolder}/assets/svg`) );
-  done();
 });
 
 
