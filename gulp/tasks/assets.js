@@ -5,8 +5,11 @@ const $             = plugins();
 const config        = require('../config');
 
 
-gulp.task('assets', done => {
+const assets = () => {
   return gulp.src(config.assets)
   .pipe( gulp.dest( `${config.distFolder}/assets/misc` ) );
-  done();
-});
+};
+
+gulp.task('assets', assets);
+
+module.exports = assets;

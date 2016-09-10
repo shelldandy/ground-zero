@@ -11,7 +11,7 @@ const production    = argv.prod || argv.production;
 
 const destination = `${config.distFolder}/assets/javascript`;
 
-gulp.task('scripts', done => {
+const scripts = done => {
   return gulp.src(config.scriptFiles)
   .pipe( when( !production, $.sourcemaps.init() ) )
   .pipe($.concat('main.js'))
@@ -29,5 +29,8 @@ gulp.task('scripts', done => {
   // Finally make it uber small with gzip
   .pipe( when( production, $.gzip() ) )
   .pipe( when( production, gulp.dest(destination) ) );
-  done();
-});
+};
+
+gulp.task('scripts', scripts);
+
+module.exports = scripts;

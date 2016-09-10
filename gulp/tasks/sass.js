@@ -11,8 +11,7 @@ const production    = argv.prod || argv.production;
 
 const destination = `${config.distFolder}/assets/stylesheets`;
 
-
-gulp.task('sass', done => {
+const sass = () => {
   return gulp.src('./src/sass/main.sass')
   .pipe( when( !production, $.sourcemaps.init() ) )
   .pipe( $.sass({
@@ -37,6 +36,8 @@ gulp.task('sass', done => {
   // Finally make it uber small with gzip
   .pipe( when( production, $.gzip() ) )
   .pipe( when( production, gulp.dest(destination) ) );
-  done();
+};
 
-});
+gulp.task('sass', sass);
+
+module.exports = sass;
