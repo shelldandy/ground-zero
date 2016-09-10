@@ -38,6 +38,10 @@ gulp deploy
 
 - [**Modular-Scale**](https://github.com/modularscale/modularscale-sass) - Sass Plugin based on [Type-Scale](http://type-scale.com/) using math ratios to have beauty integrated on our project.
 
+## Test
+
+Run `npm test`
+
 ## How to contribute
 
 If you wish to contribute to ground-zero, just fork it and submit a PR.
