@@ -54,6 +54,15 @@
     "gulp-uglify": "*",
     "gulp-uncss": "*",
     "require-dir": "*",
+    "standard": "*",
     "yargs": "^5.0.0"
+  },
+  "standard": {
+    "globals": [
+      "jQuery",
+      "$",
+      "WebFont",
+      "svg4everybody"
+    ]
   }
 }
