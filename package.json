@@ -32,7 +32,6 @@
   "devDependencies": {
     "browser-sync": "*",
     "del": "*",
-    "eslint": "^3.5.0",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-autoprefixer": "*",
     "gulp-concat": "*",
