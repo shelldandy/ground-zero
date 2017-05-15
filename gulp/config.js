@@ -1,7 +1,10 @@
 'use strict'
 
+const argv = require('yargs').argv
+const production = argv.prod || argv.production
+
 module.exports = {
-  // Just for my own sanity since some Hindi friend can't navigate properly
+  production: production,
   productionBase: '/0000/2488',
   productionExtension: '.html',
   // Our main dist folder

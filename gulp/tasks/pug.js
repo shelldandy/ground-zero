@@ -5,8 +5,7 @@ const $ = plugins()
 const config = require('../config')
 const when = require('gulp-if')
 // Check if gulp scripts --prod or --production has been added to the task
-const argv = require('yargs').argv
-const production = argv.prod || argv.production
+const production = config.production
 
 const devLocals = {
   base: '',
