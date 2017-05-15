@@ -38,5 +38,26 @@ module.exports = {
   errorHandler: function (error) {
     console.log(error.toString())
     this.emit('end')
+  },
+  babelrc: {
+    'presets': [
+      [
+        'env',
+        {
+          'targets': {
+            'browsers': ['last 2 versions', 'iOS 8'],
+            'uglify': 2
+          }
+        }
+      ]
+    ],
+    'plugins': [
+      [
+        'transform-object-rest-spread',
+        {
+          'useBuiltIns': true
+        }
+      ]
+    ]
   }
 }

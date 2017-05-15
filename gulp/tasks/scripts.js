@@ -18,27 +18,7 @@ gulp.task('scripts', () => {
     entries: './src/assets/js/index.js',
     debug: true,
     transform: [
-      babel.configure({
-        'presets': [
-          [
-            'env',
-            {
-              'targets': {
-                'browsers': ['last 2 versions', 'iOS 8'],
-                'uglify': 2
-              }
-            }
-          ]
-        ],
-        'plugins': [
-          [
-            'transform-object-rest-spread',
-            {
-              'useBuiltIns': true
-            }
-          ]
-        ]
-      })
+      babel.configure(config.babelrc)
     ]
   })
 
