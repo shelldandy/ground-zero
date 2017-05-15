@@ -63,5 +63,11 @@
       "WebFont",
       "svg4everybody"
     ]
+  },
+  "dependencies": {
+    "babelify": "^7.3.0",
+    "browserify": "^14.3.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
   }
 }
