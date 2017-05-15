@@ -27,10 +27,6 @@ gulp.task('sass', () => {
   .pipe(gulp.dest(destination))
 
   .pipe(when(production, $.rename({suffix: '.min'})))
-  .pipe(when(production, $.uncss({
-    html: config.uncssHtml,
-    ignore: config.uncssIgnore
-  })))
   .pipe(when(production, $.cssnano()))
   .pipe(when(production, gulp.dest(destination)))
   // Finally make it uber small with gzip

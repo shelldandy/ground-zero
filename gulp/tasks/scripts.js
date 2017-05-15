@@ -16,7 +16,7 @@ const babel = require('babelify')
 gulp.task('scripts', () => {
   const bundler = browserify({
     entries: './src/assets/js/index.js',
-    debug: true,
+    debug: production,
     transform: [
       babel.configure(config.babelrc)
     ]

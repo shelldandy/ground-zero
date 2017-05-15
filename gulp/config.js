@@ -12,13 +12,6 @@ module.exports = {
     './src/bower/manila-mixins/src',
     './src/bower/bem-constructor/dist'
   ],
-  // Stuff for UnCss
-  uncssHtml: [
-    './dist/index.html'
-  ],
-  uncssIgnore: [
-    ''
-  ],
   // Here you add the paths to the full-length js files from your Bower imports
   scriptFiles: [
     './src/bower/jquery/dist/jquery.min.js',

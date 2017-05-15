@@ -51,7 +51,6 @@
     "gulp-svgmin": "*",
     "gulp-svgstore": "*",
     "gulp-uglify": "*",
-    "gulp-uncss": "*",
     "require-dir": "*",
     "standard": "*",
     "yargs": "^8.0.1"
