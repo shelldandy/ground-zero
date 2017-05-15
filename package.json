@@ -54,7 +54,7 @@
     "gulp-uncss": "*",
     "require-dir": "*",
     "standard": "*",
-    "yargs": "^5.0.0"
+    "yargs": "^8.0.1"
   },
   "standard": {
     "globals": [
